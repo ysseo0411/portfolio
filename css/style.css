@@ -3,7 +3,7 @@
 
 /* layout */
 body {
-  background-color: #eee9dd;
+  background-color: #f8e8c8;
   transition: 0.3s ease-out;
 }
 
@@ -19,8 +19,10 @@ body {
 
 .container {
   width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
   position: relative;
+  padding: 0 3vw;
 }
 
 /* background settings */
@@ -38,18 +40,6 @@ body {
   height: 100vh;
   z-index: -1;
 }
-
-/* .section {
-  padding: 5vw;
-  height: 100vh;
-  overflow: visible;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-} */
 
 .blur {
   position: absolute;
@@ -121,97 +111,91 @@ body {
 }
 
 /* mainview */
-#mainview {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #mainview .contents {
-  display: flex;
-  width: 90%;
   height: 100vh;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 #mainview .left-box {
-  width: 56%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
-#mainview .left-box h2 {
+#mainview .left-box .text {
   font-family: "Santiago";
-  font-size: 5.8vw;
-  margin-top: 1.2vw;
-  margin-bottom: 1.5vw;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
-#mainview .left-box h2 strong {
+#mainview .left-box .text h2 {
   position: relative;
-  font-size: 7vw;
+  font-size: 8.5vw;
 }
 
-#mainview .left-box h2 strong::before {
+#mainview .left-box .text h2::before {
   content: "";
   display: block;
-  width: 22.5vw;
+  width: 18vw;
   border: 0.1rem solid #000;
   position: absolute;
-  top: 60px;
-  left: 19.5vw;
+  top: 4.5vw;
+  left: 22.5vw;
+}
+
+#mainview .left-box .text strong {
+  position: relative;
+  font-size: 5.5vw;
+  font-style: normal;
 }
 
 #mainview .left-box p {
-  position: relative;
-  top: -1.9vw;
-  left: 0.1vw;
-  width: 94%;
+  width: 41vw;
   font-family: "YUniverse";
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   font-weight: 300;
   line-height: 1.8;
   text-align: justify;
+  padding-bottom: 2vw;
+  padding-top: 1.8vw;
 }
 
 #mainview .left-box a {
-  width: 18.3vw;
-  height: 4.9vw;
+  width: 13vw;
+  height: 3vw;
+  display: block;
   color: #fff;
   background-color: #000;
-  padding: 1vw 2.5vw;
+  padding: 0 2vw;
+  line-height: 3vw;
   font-size: 1.1vw;
   font-family: "abel";
-  position: relative;
-  top: 3vw;
-  left: 0.1vw;
+  box-sizing: border-box;
 }
 
 #mainview .right-box {
-  width: 55%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 30%;
+  height: 70%;
+  position: relative;
 }
 
 #mainview .right-box .main_img {
-  width: 50%;
-  height: 67%;
+  width: 100%;
+  height: 100%;
   border: 0.2rem solid #000;
   border-radius: 30vw 30vw 0 0;
   background: url("../src/img/mainview011.png") no-repeat center center / cover;
 }
 
-#mainview .line {
+#mainview .right-box .line {
   width: 0.2rem;
-  height: 5.2vw;
+  height: 5vw;
   background: #000;
   position: absolute;
-  left: 71.8vw;
-  top: 60px;
+  left: 50%;
+  top: -30px;
 }
 
 #mainview .planet1 svg {
@@ -222,17 +206,17 @@ body {
 
 #mainview .star1 svg {
   position: absolute;
-  left: 82vw;
+  left: 0;
   top: 9.5vw;
 }
 
 #mainview .star2 svg {
   position: absolute;
-  left: 86vw;
+  left: 0;
   top: 16vw;
 }
 
-#mainview .scroll_down svg {
+/* #mainview .scroll_down svg {
   height: 20vw;
   font-size: 32px;
   font-family: "Reem Kufi";
@@ -240,9 +224,9 @@ body {
   text-transform: uppercase;
   fill: #000;
   position: absolute;
-  left: -22vw;
+  left: 0;
   top: 6.5vw;
-}
+} */
 
 #mainview .arrow {
   font-size: 7.2vw;
@@ -697,8 +681,10 @@ body {
 }
 
 #work .web {
+  min-width: 1300px;
+  width: 95%;
   margin: 0 auto;
-  margin-left: -3vw;
+  /* margin-left: -3vw; */
 }
 
 #work .web .work-item {
@@ -791,4 +777,163 @@ body {
 #work .web .work-item i {
   font-size: 1.1vw;
   margin-left: 1.6vw;
+}
+
+/* work - css animation */
+#work .css_ani {
+  position: relative;
+}
+
+#work .css_ani .title {
+  width: 100vh;
+  height: auto;
+  display: block;
+  position: relative;
+  font-family: "original-regular";
+  margin: 0 auto;
+  margin-bottom: 30vh;
+}
+
+#work .css_ani .title p {
+  position: relative;
+  left: 2vw;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 1);
+  -moz-text-stroke: 0.1vw rgba(0, 0, 0, 1);
+  -ms-text-stroke: 0.1vw rgba(0, 0, 0, 1);
+  -o-text-stroke: 0.1vw rgba(0, 0, 0, 1);
+  font-size: 10vw;
+}
+
+#work .css_ani .title em {
+  position: absolute;
+  top: 9.5vw;
+  right: 0vw;
+  color: #000;
+  font-size: 8.7vw;
+  text-shadow: 0.2vw 0.1vw 0 #fff;
+  /* font-style: normal; */
+}
+
+#work .css_ani .star5 svg {
+  position: absolute;
+  left: 38vw;
+  top: -2.5vw;
+}
+
+#work .css_ani .star6 svg {
+  position: absolute;
+  right: 13vw;
+  top: 15vw;
+}
+
+#work .css_ani .contents {
+  position: relative;
+  min-width: 1300px;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-flow: wrap;
+  border: 1px solid #000;
+}
+
+#work .css_ani .box {
+  display: flex;
+  width: 30vw;
+  height: 32vw;
+  margin-bottom: 10vw;
+  border: 1px solid #000;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 800px) {
+  .container_h {
+    width: 90%;
+  }
+
+  .container {
+    min-width: 450px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  #header .contents {
+    display: block;
+  }
+
+  #header .contents h1 {
+    float: initial;
+    text-align: center;
+  }
+  #header .nav ul {
+    display: none;
+  }
+
+  #mainview .contents {
+    flex-direction: column-reverse;
+  }
+
+  #mainview .left-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  #mainview .left-box .text h2::before {
+    display: none;
+  }
+
+  #mainview .left-box .text h2 {
+    font-size: 21vw;
+  }
+
+  #mainview .left-box .text strong {
+    font-size: 7.8vw;
+  }
+
+  #mainview .left-box .text p {
+    width: 82%;
+    font-size: 2vw;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+  }
+
+  #mainview .right-box {
+    width: 70%;
+    position: relative;
+    float: initial;
+    /* margin-bottom: 300px; */
+  }
+
+  #mainview .right-box .main_img {
+    width: 100%;
+    height: 100%;
+    margin-top: 110px;
+    border-radius: 300px 300px 0 0;
+  }
+
+  #mainview .right-box .line {
+    width: 0.2rem;
+    height: 51px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+  }
+
+  #mainview .left-box a {
+    width: 82%;
+    height: 5.5vw;
+    display: block;
+    color: #fff;
+    background-color: #000;
+    padding: 0 2vw;
+    line-height: 5.5vw;
+    font-size: 2vw;
+    font-family: "abel";
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
 }
