@@ -213,13 +213,13 @@ body {
 #mainview .contents span:nth-child(2) {
   position: absolute;
   left: 92%;
-  top: 19%;
+  top: 16%;
 }
 
 #mainview .contents span:nth-child(3) {
   position: absolute;
   left: 97%;
-  top: 32%;
+  top: 33%;
 }
 #mainview .contents .scrolldown svg {
   height: 58%;
@@ -923,7 +923,7 @@ body {
   }
 
   .container {
-    min-width: 450px;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
   }
@@ -975,7 +975,7 @@ body {
   #mainview .right {
     position: fixed;
     top: 50px;
-    width: 480px;
+    width: 80%;
     height: 700px;
   }
 
@@ -988,13 +988,14 @@ body {
 
   #mainview .line {
     width: 0.2rem;
-    height: 20vh;
+    height: 50vh;
     background: #000;
     left: 50%;
     top: 0;
   }
 
   #mainview .left a {
+    position: relative;
     width: 62%;
     height: 5.5vw;
     display: block;
@@ -1010,20 +1011,20 @@ body {
 
   #mainview .contents span:nth-child(1) {
     position: absolute;
-    top: 10vw;
-    left: 1vw;
+    top: 5%;
+    left: 7%;
     z-index: 1;
   }
 
   #mainview .contents span:nth-child(2) {
-    top: 9vh;
-    left: 75vw;
+    top: 10%;
+    left: 79%;
     z-index: 1;
   }
 
   #mainview .contents span:nth-child(3) {
-    top: 20vh;
-    left: 84vw;
+    top: 20%;
+    left: 88%;
     z-index: 1;
   }
 
@@ -1036,6 +1037,7 @@ body {
   }
 
   #about_marquee {
+    width: 100%;
     top: 100vw;
     height: 14vw;
   }

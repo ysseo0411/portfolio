@@ -14,14 +14,14 @@
   font-family: "original_regular";
   src: url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-regular-webfont.eot")
       format("eot"),
+    url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-regular-webfont.woff2")
+      format("woff2"),
+    url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-regular-webfont.woff")
+      format("woff"),
     url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-regular-webfont.otf")
       format("otf"),
     url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-regular-webfont.ttf")
-      format("ttf"),
-    url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-regular-webfont.woff")
-      format("woff"),
-    url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-regular-webfont.woff2")
-      format("woff2");
+      format("ttf");
 }
 
 /* Original Black */
@@ -29,30 +29,27 @@
   font-family: "original_black";
   src: url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-black-webfont.eot")
       format("eot"),
+    url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-black-webfont.woff2")
+      format("woff2"),
+    url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-black-webfont.woff")
+      format("woff"),
     url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-black-webfont.otf")
       format("otf"),
     url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-black-webfont.ttf")
-      format("ttf"),
-    url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-black-webfont.woff")
-      format("woff"),
-    url("https://ysseo0411.github.io/portfolio/src/fonts/Original/original-black-webfont.woff2")
-      format("woff2");
+      format("ttf");
 }
 
 /* Monument Ultrabold */
 @font-face {
   font-family: "monument_ultrabold";
-  src: url("//db.onlinewebfonts.com/t/a4745f4b1d04fa025c6a05d891ed0126.eot");
-  src: url("//db.onlinewebfonts.com/t/a4745f4b1d04fa025c6a05d891ed0126.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/a4745f4b1d04fa025c6a05d891ed0126.woff2")
+  src: url("https://ysseo0411.github.io/portfolio/src/fonts/Monument/Monument-Extended-Ultrabold.eot")
+      format("eot"),
+    url("https://ysseo0411.github.io/portfolio/src/fonts/Monument/Monument-Extended-Ultrabold.woff2")
       format("woff2"),
-    url("//db.onlinewebfonts.com/t/a4745f4b1d04fa025c6a05d891ed0126.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/a4745f4b1d04fa025c6a05d891ed0126.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/a4745f4b1d04fa025c6a05d891ed0126.svg#Monument Extended Ultrabold")
-      format("svg");
+    url("https://ysseo0411.github.io/portfolio/src/fonts/Monument/Monument-Extended-Ultrabold.otf")
+      format("otf"),
+    url("https://ysseo0411.github.io/portfolio/src/fonts/Monument/Monument-Extended-Ultrabold.ttf")
+      format("ttf");
 }
 
 /* Santiago */
@@ -60,12 +57,12 @@
   font-family: "santiago";
   src: url("https://ysseo0411.github.io/portfolio/src/fonts/Santiago/santiago-webfont.eot")
       format("eot"),
+    url("https://ysseo0411.github.io/portfolio/src/fonts/Santiago/santiago-webfont.woff2")
+      format("woff2"),
+    url("https://ysseo0411.github.io/portfolio/src/fonts/Santiago/santiago-webfont.woff")
+      format("woff"),
     url("https://ysseo0411.github.io/portfolio/src/fonts/Santiago/santiago-webfont.otf")
       format("otf"),
     url("https://ysseo0411.github.io/portfolio/src/fonts/Santiago/santiago-webfont.ttf")
-      format("ttf"),
-    url("https://ysseo0411.github.io/portfolio/src/fonts/Santiago/santiago-webfont.woff")
-      format("woff"),
-    url("https://ysseo0411.github.io/portfolio/src/fonts/Santiago/santiago-webfont.woff2")
-      format("woff2");
+      format("ttf");
 }
