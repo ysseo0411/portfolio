@@ -21,8 +21,7 @@ body {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  position: relative;
-  padding: 0 3vw;
+  /* position: relative; */
 }
 
 /* background settings */
@@ -116,43 +115,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 1vw;
+  position: relative;
 }
 
-#mainview .left-box {
-  width: 60%;
+#mainview .left {
+  width: 54%;
   display: flex;
   align-items: center;
-  justify-content: start;
 }
 
-#mainview .left-box .text {
+#mainview .left .text {
+  width: 100%;
   font-family: "Santiago";
   line-height: 1.1;
 }
 
-#mainview .left-box .text h2 {
+#mainview .left .text h2 {
   position: relative;
-  font-size: 8.5vw;
+  font-size: 13vh;
 }
 
-#mainview .left-box .text h2::before {
+#mainview .left .text h2::before {
   content: "";
   display: block;
-  width: 18vw;
-  border: 0.1rem solid #000;
+  width: 240px;
   position: absolute;
-  top: 4.5vw;
-  left: 22.5vw;
+  top: 6vh;
+  left: 35vh;
+  border: 0.1rem solid #000;
 }
 
-#mainview .left-box .text strong {
-  position: relative;
-  font-size: 5.5vw;
+#mainview .left .text strong {
+  font-size: 80px;
   font-style: normal;
+  white-space: nowrap;
 }
 
-#mainview .left-box p {
-  width: 41vw;
+#mainview .left p {
+  width: 88%;
   font-family: "YUniverse";
   font-size: 1.1vw;
   font-weight: 300;
@@ -162,78 +163,85 @@ body {
   padding-top: 1.8vw;
 }
 
-#mainview .left-box a {
+#mainview .left a {
   width: 13vw;
   height: 3vw;
   display: block;
   color: #fff;
-  background-color: #000;
   padding: 0 2vw;
   line-height: 3vw;
   font-size: 1.1vw;
   font-family: "abel";
+  background-color: #000;
   box-sizing: border-box;
 }
 
-#mainview .right-box {
-  width: 30%;
-  height: 70%;
+#mainview .right {
+  width: 40%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
-#mainview .right-box .main_img {
-  width: 100%;
-  height: 100%;
+#mainview .right .main_img {
+  left: 58.9vw;
+  top: 140px;
+  width: 42vh;
+  height: 65vh;
   border: 0.2rem solid #000;
   border-radius: 30vw 30vw 0 0;
-  background: url("../src/img/mainview011.png") no-repeat center center / cover;
+  background: url("../src/img/mainview011.jpg") no-repeat center center / cover;
 }
 
-#mainview .right-box .line {
+#mainview .line {
+  position: absolute;
+  left: 78.9%;
   width: 0.2rem;
-  height: 5vw;
+  height: 30vh;
   background: #000;
-  position: absolute;
-  left: 50%;
-  top: -30px;
+  top: 59px;
+  z-index: -1;
 }
 
-#mainview .planet1 svg {
+#mainview .contents span:nth-child(1) {
   position: absolute;
-  left: -48vw;
-  top: 10.5vw;
+  left: 38%;
+  top: 70%;
 }
 
-#mainview .star1 svg {
+#mainview .contents span:nth-child(2) {
   position: absolute;
-  left: 0;
-  top: 9.5vw;
+  left: 92%;
+  top: 19%;
 }
 
-#mainview .star2 svg {
+#mainview .contents span:nth-child(3) {
   position: absolute;
-  left: 0;
-  top: 16vw;
+  left: 97%;
+  top: 32%;
 }
-
-/* #mainview .scroll_down svg {
-  height: 20vw;
+#mainview .contents .scrolldown svg {
+  height: 58%;
   font-size: 32px;
   font-family: "Reem Kufi";
   font-weight: 400;
   text-transform: uppercase;
   fill: #000;
   position: absolute;
-  left: 0;
-  top: 6.5vw;
-} */
+  left: -19vh;
+  top: 45vh;
+  z-index: 10;
+}
 
-#mainview .arrow {
-  font-size: 7.2vw;
+#mainview .contents .scrolldown span {
+  height: 30%;
+  font-size: 13vh;
   color: #d00000;
   position: absolute;
-  left: -15.8vw;
-  top: 12.9vw;
+  left: -3.8vw;
+  top: 58vh;
+  z-index: 10;
 }
 
 /* about label menu */
@@ -286,6 +294,10 @@ body {
   left: 0;
 }
 
+#profile .container {
+  max-width: 100%;
+}
+
 .pin-wrap {
   height: 100vh;
   display: flex;
@@ -308,31 +320,34 @@ body {
 .pin-wrap .contents {
   width: 100vw;
   height: 70vh;
-  margin-top: 60px;
+  margin-top: 45px;
   align-items: center;
+  justify-content: center;
 }
 
 /* about */
 #about .contents {
   display: flex;
+  justify-content: space-between;
+  padding: 0 2vw;
 }
-#about .contents .left_box {
+#about .contents .left {
   position: relative;
-  width: 50%;
+  width: 45%;
 }
 
-#about .contents .left_box .img_circle {
+#about .contents .left .img-circle {
   display: block;
   width: 36vw;
   height: 36vw;
   margin: 0.1vw auto;
   border-radius: 50%;
-  border: 0.15rem solid #000;
+  /* border: 0.15rem solid #000; */
   position: relative;
-  background-color: #fae0d7;
+  background-color: #fad7d7;
 }
 
-#about .contents .left_box .img_circle::after {
+#about .contents .left .img-circle::after {
   display: block;
   content: "";
   width: 36vw;
@@ -346,7 +361,7 @@ body {
   z-index: -1;
 }
 
-#about .contents .img_deco {
+#about .contents .img-deco {
   font-family: "original_regular";
   font-size: 3.6vw;
   text-align: center;
@@ -363,7 +378,7 @@ body {
   top: -5.2vw;
 }
 
-#about .contents .img_deco strong {
+#about .contents .img-deco strong {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.2);
   -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 0);
@@ -371,7 +386,8 @@ body {
   -ms-text-stroke: 0.1vw rgba(0, 0, 0, 0);
   -o-text-stroke: 0.1vw rgba(0, 0, 0, 0);
 }
-#about .contents .img_deco em {
+
+#about .contents .img-deco em {
   font-style: normal;
   color: rgba(0, 0, 0, 0.4);
   -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 0);
@@ -380,62 +396,59 @@ body {
   -o-text-stroke: 0.1vw rgba(0, 0, 0, 0);
 }
 
-#about .contents .left_box img {
+#about .contents .left img {
   width: 100%;
   height: 150%;
   object-fit: contain;
   position: absolute;
   top: -6vw;
-  left: 0;
 }
 
-#about .star1 svg {
+#about .img-circle span:nth-of-type(1) {
   position: absolute;
-  left: 28.2vw;
-  top: -6.5vw;
+  left: 32vw;
+  top: -8vh;
   z-index: -1;
 }
 
-#about .star2 svg {
+#about .img-circle span:nth-of-type(2) {
   position: absolute;
-  left: -7.3vw;
-  top: 15.8vw;
+  left: -6vw;
+  top: 18.5vw;
   z-index: -1;
 }
 
-#about .contents .right-box {
+#about .contents .right {
   position: relative;
-  top: 2vw;
-  left: 2vw;
-  width: 43%;
-  height: 100%;
+  width: 45%;
+  /* height: 100%; */
 }
 
-#about .contents .right-box h2 {
+#about .contents .right h2 {
   font-family: "original_regular";
   letter-spacing: 0.2rem;
   font-size: 3.6vw;
 }
 
-#about .contents .right-box > p {
+#about .contents .right > p {
   width: 100%;
   font-family: "YUniverse";
   font-weight: 300;
   margin-top: 2vw;
 }
 
-#about .contents .right-box p span {
+#about .contents .right p span {
   color: #d00000;
 }
 
-#about .right-box p[class="intro"] {
+#about .right p[class="intro"] {
   font-weight: 700;
   font-size: 2vw;
   line-height: 1.5;
   margin-bottom: 2.2vw;
 }
 
-#about .right-box p[class="desc"] {
+#about .right p[class="desc"] {
   width: 100%;
   font-style: normal;
   font-weight: 300;
@@ -450,6 +463,7 @@ body {
 #skills .contents {
   padding-top: 1.5vw;
 }
+
 #skills h2 {
   font-family: "original_regular";
   letter-spacing: 0.2rem;
@@ -530,30 +544,30 @@ body {
   top: 1vw;
 }
 
-#skills .icon1 svg {
+#skills span:nth-of-type(1) {
   position: absolute;
-  top: 7vw;
-  left: 10.5vw;
+  top: 18.5vh;
+  left: 9.2%;
 }
 
 #skills .icon1-line {
   width: 0.2rem;
-  height: 5.8vw;
-  position: relative;
-  left: 12.8vw;
-  top: 0;
+  height: 10vh;
+  position: absolute;
+  left: 12vw;
+  top: 60px;
   background-color: #000;
 }
 
-#skills .icon2 svg {
+#skills span:nth-of-type(2) {
   position: absolute;
-  bottom: 10vw;
-  right: 6vw;
+  bottom: 10.8vh;
+  right: 5.7%;
 }
 
 #skills .icon2-line {
   width: 0.2rem;
-  height: 5.8vw;
+  height: 10vh;
   position: absolute;
   right: 8.3vw;
   bottom: 0;
@@ -564,7 +578,7 @@ body {
 #edu .contents {
   display: flex;
 }
-#edu .left-box h2 {
+#edu .left h2 {
   display: inline-block;
   font-family: "original_regular";
   font-size: 3.5vw;
@@ -574,32 +588,32 @@ body {
   top: -2.4vw;
 }
 
-#edu .left-box {
+#edu .left {
   width: 45%;
   margin-left: 3vw;
 }
 
-#edu .left-box p {
+#edu .left p {
   font-family: "YUniverse";
   font-size: 1.6vw;
   font-weight: 300;
   margin-bottom: 3vw;
 }
 
-#edu .left-box strong {
+#edu .left strong {
   font-family: "original_regular";
   font-weight: 400;
   font-size: 2vw;
 }
 
-#edu .right-box {
+#edu .right {
   width: 47%;
   height: 100%;
   position: relative;
   padding-left: 2vw;
 }
 
-#edu .right-box .about-img {
+#edu .right .about-img {
   width: 22.5vw;
   height: 95%;
   border: 0.2rem solid #000;
@@ -608,22 +622,22 @@ body {
   margin-left: 10vw;
 }
 
-#edu .right-box .planet2 svg {
+#edu .right .planet2 svg {
   position: absolute;
   right: 38vw;
   bottom: 3vw;
 }
-#edu .left-box .star3 svg {
+#edu .left .star3 svg {
   position: absolute;
   top: 1vw;
   left: -2vw;
 }
-#edu .right-box .star4 svg {
+#edu .right .star4 svg {
   position: absolute;
   right: 4.9vw;
   top: 0;
 }
-#edu .right-box .circle svg {
+#edu .right .circle svg {
   position: absolute;
   left: -2vw;
   top: -5vw;
@@ -706,11 +720,11 @@ body {
   margin-right: 5vw;
 }
 
-#work .web .work-item .text-box {
+#work .web .work-item .text {
   letter-spacing: 0.2rem;
 }
 
-#work .web .work-item .text-box h2 {
+#work .web .work-item .text h2 {
   font-family: "original_regular";
   font-size: 5vw;
   text-shadow: 0.2vw 0.1vw 0 #b8b6b6;
@@ -720,7 +734,7 @@ body {
   font-size: 4.9vw;
 }
 
-#work .web .work-item .text-box strong {
+#work .web .work-item .text strong {
   font-family: "YUniverse";
   font-size: 2.4vw;
   position: relative;
@@ -729,7 +743,7 @@ body {
   color: #d00000;
 }
 
-#work .web .work-item .text-box em {
+#work .web .work-item .text em {
   font-family: "original_black";
   font-size: 13vw;
   color: rgba(0, 0, 0, 0);
@@ -744,12 +758,12 @@ body {
   font-style: normal;
 }
 
-#work .web .work-item .text-box .em2 {
+#work .web .work-item .text .em2 {
   left: -0.5vw;
   top: -9.5vw;
 }
 
-#work .web .work-item .text-box p {
+#work .web .work-item .text p {
   width: 90.5%;
   font-family: "YUniverse";
   font-size: 1.3vw;
@@ -849,7 +863,61 @@ body {
 }
 
 /* 미디어 쿼리 */
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
+  #mainview .contents {
+    padding: 0 2vw;
+    /* background-color: #fc0; */
+  }
+  #mainview .left {
+    width: 50%;
+  }
+  #mainview .left .text h2::before {
+    width: 245px;
+  }
+
+  #mainview .left .text strong {
+    font-size: 8.2vh;
+  }
+
+  #mainview .left p {
+    width: 90%;
+    font-size: 1.2vw;
+  }
+
+  #mainview .right {
+    width: 50%;
+  }
+
+  #mainview .line {
+    left: 74%;
+  }
+
+  #mainview .contents .scrolldown svg {
+    height: 54%;
+    top: 46vh;
+    left: -18vh;
+  }
+
+  #mainview .contents .scrolldown span {
+    height: 30%;
+    left: -6vw;
+    border: 1px solid #000;
+  }
+
+  #mainview .contents span:nth-child(1) {
+    left: 38%;
+  }
+
+  #mainview .contents span:nth-child(2) {
+    left: 87%;
+  }
+
+  #mainview .contents span:nth-child(3) {
+    left: 92%;
+  }
+}
+
+@media (max-width: 1100px) {
   .container_h {
     width: 90%;
   }
@@ -876,55 +944,52 @@ body {
     flex-direction: column-reverse;
   }
 
-  #mainview .left-box {
+  #mainview .left {
     width: 100%;
     text-align: center;
+    margin-top: 160px;
   }
 
-  #mainview .left-box .text h2::before {
+  #mainview .left .text h2::before {
     display: none;
   }
 
-  #mainview .left-box .text h2 {
+  #mainview .left .text h2 {
     font-size: 21vw;
   }
 
-  #mainview .left-box .text strong {
+  #mainview .left .text strong {
     font-size: 7.8vw;
   }
 
-  #mainview .left-box .text p {
-    width: 82%;
+  #mainview .left .text p {
+    width: 62%;
     font-size: 2vw;
     margin: 0 auto;
-    margin-bottom: 5vw;
+    margin-bottom: 10vw;
   }
 
-  #mainview .right-box {
-    width: 70%;
+  #mainview .right {
     position: relative;
-    float: initial;
-    /* margin-bottom: 300px; */
+    width: 70%;
   }
 
-  #mainview .right-box .main_img {
+  #mainview .right .main_img {
     width: 100%;
     height: 100%;
-    margin-top: 110px;
-    border-radius: 300px 300px 0 0;
+    margin-top: 190px;
+    border-radius: 35vw 35vw 0 0;
   }
 
-  #mainview .right-box .line {
+  #mainview .line {
     width: 0.2rem;
-    height: 51px;
+    height: 20vh;
     background: #000;
-    position: absolute;
     left: 50%;
-    top: 60px;
   }
 
-  #mainview .left-box a {
-    width: 82%;
+  #mainview .left a {
+    width: 62%;
     height: 5.5vw;
     display: block;
     color: #fff;
@@ -935,5 +1000,32 @@ body {
     font-family: "abel";
     box-sizing: border-box;
     margin: 0 auto;
+  }
+
+  #mainview .contents span:nth-child(1) {
+    position: absolute;
+    top: 15vw;
+    left: 1vw;
+    z-index: 1;
+  }
+
+  #mainview .contents span:nth-child(2) {
+    top: 15vh;
+    left: 75vw;
+    z-index: 1;
+  }
+
+  #mainview .contents span:nth-child(3) {
+    top: 24vh;
+    left: 85vw;
+    z-index: 1;
+  }
+
+  #mainview .contents .scrolldown svg {
+    display: none;
+  }
+
+  #mainview .contents .scrolldown span {
+    display: none;
   }
 }
