@@ -592,7 +592,7 @@ body {
 #edu .left h2 {
   display: inline-block;
   font-family: "original_regular";
-  font-size: 3.5vw;
+  font-size: 3.8vw;
   letter-spacing: 0.2rem;
   margin-bottom: 2vw;
   position: relative;
@@ -687,19 +687,14 @@ body {
 
 /* work */
 #work {
-  display: block;
   position: relative;
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
   margin-top: 26vw;
-  /* height: 60vw; */
 }
 
 #work .web {
-  min-width: 1300px;
-  width: 95%;
-  margin: 0 auto;
-  /* margin-left: -3vw; */
+  max-width: 1300px;
+  width: 100%;
 }
 
 #work .web .work-item {
@@ -707,41 +702,54 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 15vw;
   position: relative;
+  padding: 0 3vw;
+  /* border: 1px solid red; */
 }
 
 #work .web .work-item:nth-child(2) {
   flex-direction: row-reverse;
-  left: 3.8vw;
 }
 
-#work .web .work-item img {
-  width: 40vw;
+#work .web .work-item .img-box {
+  width: 50%;
+  position: relative;
   margin-right: 5vw;
 }
 
+#work .web .work-item:nth-child(2) .img-box {
+  margin-right: 0;
+}
+#work .web .work-item img {
+  width: 102%;
+  height: auto;
+}
+
 #work .web .work-item .text {
+  width: 60%;
   letter-spacing: 0.2rem;
 }
 
 #work .web .work-item .text h2 {
   font-family: "original_regular";
-  font-size: 5vw;
-  text-shadow: 0.2vw 0.1vw 0 #b8b6b6;
+  font-size: 5.5vw;
+  color: #d00000;
+  text-shadow: 0.2vw 0.2vw 0 rgb(44, 43, 43);
 }
 
 #work .web .work-item:nth-child(2) h2 {
-  font-size: 4.9vw;
+  color: #fcca56;
+  font-size: 5vw;
 }
 
 #work .web .work-item .text strong {
   font-family: "YUniverse";
-  font-size: 2.4vw;
+  font-size: 2.9vw;
   position: relative;
   left: 0.5vw;
   top: 1.2vw;
-  color: #d00000;
 }
 
 #work .web .work-item .text em {
@@ -762,10 +770,15 @@ body {
 #work .web .work-item .text .em2 {
   left: -0.5vw;
   top: -9.5vw;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
+  -moz-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
+  -ms-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
+  -o-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
 }
 
 #work .web .work-item .text p {
-  width: 90.5%;
+  width: 98%;
   font-family: "YUniverse";
   font-size: 1.3vw;
   text-align: justify;
@@ -783,10 +796,20 @@ body {
   line-height: 3.5vw;
   font-size: 1vw;
   padding-left: 1.3vw;
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  border: 0.1rem solid #000;
   margin-left: 0.6vw;
   margin-top: 3vw;
+}
+
+#work .web .work-item .btn1,
+#work .web .work-item .btn2 {
+  background-color: #eeb1b1;
+}
+
+#work .web .work-item .btn3,
+#work .web .work-item .btn4 {
+  background-color: #fcca56;
 }
 
 #work .web .work-item i {
