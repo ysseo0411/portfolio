@@ -578,6 +578,17 @@ body {
 #edu .contents {
   display: flex;
 }
+
+#edu .left {
+  width: 45%;
+  margin-left: 3vw;
+}
+
+#edu .left span:nth-of-type(1) {
+  position: absolute;
+  top: 13%;
+  left: 0;
+}
 #edu .left h2 {
   display: inline-block;
   font-family: "original_regular";
@@ -586,11 +597,6 @@ body {
   margin-bottom: 2vw;
   position: relative;
   top: -2.4vw;
-}
-
-#edu .left {
-  width: 45%;
-  margin-left: 3vw;
 }
 
 #edu .left p {
@@ -622,25 +628,20 @@ body {
   margin-left: 10vw;
 }
 
-#edu .right .planet2 svg {
+#edu .right span:nth-of-type(1) {
   position: absolute;
   right: 38vw;
   bottom: 3vw;
 }
-#edu .left .star3 svg {
+#edu .right span:nth-of-type(2) {
   position: absolute;
-  top: 1vw;
-  left: -2vw;
-}
-#edu .right .star4 svg {
-  position: absolute;
-  right: 4.9vw;
+  right: 9%;
   top: 0;
 }
-#edu .right .circle svg {
+#edu .right span:nth-of-type(3) {
   position: absolute;
-  left: -2vw;
-  top: -5vw;
+  right: 0;
+  top: 0;
   z-index: -1;
 }
 
@@ -1012,19 +1013,19 @@ body {
   #mainview .contents span:nth-child(1) {
     position: absolute;
     top: 5%;
-    left: 7%;
+    left: 8%;
     z-index: 1;
   }
 
   #mainview .contents span:nth-child(2) {
     top: 10%;
-    left: 79%;
+    left: 82%;
     z-index: 1;
   }
 
   #mainview .contents span:nth-child(3) {
     top: 20%;
-    left: 88%;
+    left: 89%;
     z-index: 1;
   }
 
