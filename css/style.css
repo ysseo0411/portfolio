@@ -694,21 +694,17 @@ body {
 }
 
 #work .web {
-  max-width: 1300px;
   width: 100%;
 }
 
 #work .web .work-item {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex: 1 1 0;
   margin-bottom: 15vw;
   position: relative;
   padding: 0 3vw;
-  border: 1px solid red;
-}
-
-#work .web .work-item:nth-child(2) {
-  /* flex-direction: row-reverse; */
+  border: 1px solid #000;
 }
 
 #work .web .work-item .img-box {
@@ -716,10 +712,6 @@ body {
   position: relative;
   margin-right: 5vw;
   border: 1px solid #000;
-}
-
-#work .web .work-item:nth-child(2) .img-box {
-  padding-right: 0;
 }
 
 #work .web .work-item img {
@@ -730,14 +722,13 @@ body {
 #work .web .work-item .text {
   width: 60%;
   letter-spacing: 0.2rem;
-  border: 1px solid #000;
 }
 
 #work .web .work-item .text h2 {
   font-family: "original_regular";
   font-size: 72px;
   color: #d00000;
-  text-shadow: 0.2vw 0.2vw 0 rgb(44, 43, 43);
+  text-shadow: 0.2vw 0.1vw 0 rgb(44, 43, 43);
   white-space: nowrap;
 }
 
@@ -748,7 +739,7 @@ body {
 
 #work .web .work-item .text strong {
   font-family: "YUniverse";
-  font-size: 4px;
+  font-size: 35px;
   margin-top: 6px;
 }
 
@@ -768,8 +759,6 @@ body {
 }
 
 #work .web .work-item .text .em2 {
-  left: -0.5vw;
-  top: -9.5vw;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
   -moz-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
@@ -784,7 +773,6 @@ body {
   text-align: justify;
   line-height: 1.5;
   position: relative;
-  left: 0.5vw;
   margin-top: 2.8vw;
 }
 
@@ -798,7 +786,6 @@ body {
   padding: 0 17px;
   color: #000;
   border: 0.1rem solid #000;
-  margin-left: 5px;
   margin-top: 30px;
 }
 
