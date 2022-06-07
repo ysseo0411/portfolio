@@ -115,7 +115,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1vw;
+  margin: 0 2vw;
   position: relative;
 }
 
@@ -147,15 +147,14 @@ body {
 }
 
 #mainview .left .text strong {
-  font-size: 80px;
+  font-size: 8vh;
   font-style: normal;
   white-space: nowrap;
 }
 
 #mainview .left p {
-  width: 88%;
   font-family: "YUniverse";
-  font-size: 1.1vw;
+  font-size: 2vh;
   font-weight: 300;
   line-height: 1.8;
   text-align: justify;
@@ -196,7 +195,7 @@ body {
 
 #mainview .line {
   position: absolute;
-  left: 78.9%;
+  left: 80%;
   width: 0.2rem;
   height: 30vh;
   background: #000;
@@ -204,19 +203,20 @@ body {
   z-index: -1;
 }
 
-#mainview .contents span:nth-child(1) {
+#mainview .contents .left span {
   position: absolute;
-  left: 38%;
+  left: 40%;
   top: 70%;
+  z-index: 10;
 }
 
-#mainview .contents span:nth-child(2) {
+#mainview .contents span:nth-child(1) {
   position: absolute;
   left: 92%;
   top: 16%;
 }
 
-#mainview .contents span:nth-child(3) {
+#mainview .contents span:nth-child(2) {
   position: absolute;
   left: 97%;
   top: 33%;
@@ -239,7 +239,7 @@ body {
   font-size: 13vh;
   color: #d00000;
   position: absolute;
-  left: -3.8vw;
+  left: -7vh;
   top: 58vh;
   z-index: 10;
 }
@@ -329,7 +329,7 @@ body {
 #about .contents {
   display: flex;
   justify-content: space-between;
-  padding: 0 2vw;
+  padding: 0 4vw;
 }
 #about .contents .left {
   position: relative;
@@ -397,7 +397,7 @@ body {
 }
 
 #about .contents .left img {
-  width: 100%;
+  width: 105%;
   height: 150%;
   object-fit: contain;
   position: absolute;
@@ -420,8 +420,9 @@ body {
 
 #about .contents .right {
   position: relative;
-  width: 45%;
-  /* height: 100%; */
+  top: 1vh;
+  width: 50%;
+  padding: 0 1.5vw;
 }
 
 #about .contents .right h2 {
@@ -449,7 +450,7 @@ body {
 }
 
 #about .right p[class="desc"] {
-  width: 100%;
+  width: 90%;
   font-style: normal;
   font-weight: 300;
   margin-top: 2.4vw;
@@ -699,62 +700,61 @@ body {
 
 #work .web .work-item {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 15vw;
   position: relative;
   padding: 0 3vw;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 #work .web .work-item:nth-child(2) {
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
 }
 
 #work .web .work-item .img-box {
   width: 50%;
   position: relative;
   margin-right: 5vw;
+  border: 1px solid #000;
 }
 
 #work .web .work-item:nth-child(2) .img-box {
-  margin-right: 0;
+  padding-right: 0;
 }
+
 #work .web .work-item img {
-  width: 102%;
+  width: 100%;
   height: auto;
 }
 
 #work .web .work-item .text {
   width: 60%;
   letter-spacing: 0.2rem;
+  border: 1px solid #000;
 }
 
 #work .web .work-item .text h2 {
   font-family: "original_regular";
-  font-size: 5.5vw;
+  font-size: 72px;
   color: #d00000;
   text-shadow: 0.2vw 0.2vw 0 rgb(44, 43, 43);
+  white-space: nowrap;
 }
 
 #work .web .work-item:nth-child(2) h2 {
   color: #fcca56;
-  font-size: 5vw;
+  font-size: 68px;
 }
 
 #work .web .work-item .text strong {
   font-family: "YUniverse";
-  font-size: 2.9vw;
-  position: relative;
-  left: 0.5vw;
-  top: 1.2vw;
+  font-size: 4px;
+  margin-top: 6px;
 }
 
 #work .web .work-item .text em {
   font-family: "original_black";
-  font-size: 13vw;
+  font-size: 190px;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
   -moz-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
@@ -762,8 +762,8 @@ body {
   -o-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
   z-index: -1;
   position: absolute;
-  top: -8.5vw;
-  right: 3vw;
+  top: -130px;
+  right: 30px;
   font-style: normal;
 }
 
@@ -778,9 +778,9 @@ body {
 }
 
 #work .web .work-item .text p {
-  width: 98%;
+  /* width: 98%; */
   font-family: "YUniverse";
-  font-size: 1.3vw;
+  font-size: 18px;
   text-align: justify;
   line-height: 1.5;
   position: relative;
@@ -791,15 +791,15 @@ body {
 #work .web .work-item .btn {
   display: inline-block;
   font-family: "Abel";
-  width: 11vw;
-  height: 3.5vw;
-  line-height: 3.5vw;
-  font-size: 1vw;
-  padding-left: 1.3vw;
+  width: 169px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  padding: 0 17px;
   color: #000;
   border: 0.1rem solid #000;
-  margin-left: 0.6vw;
-  margin-top: 3vw;
+  margin-left: 5px;
+  margin-top: 30px;
 }
 
 #work .web .work-item .btn1,
@@ -813,8 +813,9 @@ body {
 }
 
 #work .web .work-item i {
-  font-size: 1.1vw;
-  margin-left: 1.6vw;
+  line-height: 50px;
+  font-size: 18px;
+  padding-left: 22px;
 }
 
 /* work - css animation */
@@ -887,61 +888,70 @@ body {
 }
 
 /* 미디어 쿼리 */
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
   #mainview .contents {
     padding: 0 2vw;
-    /* background-color: #fc0; */
   }
   #mainview .left {
     width: 50%;
   }
+
+  #mainview .left .text h2 {
+    font-size: 100px;
+  }
   #mainview .left .text h2::before {
-    width: 245px;
+    left: 280px;
+    top: 50%;
+    width: 200px;
   }
 
   #mainview .left .text strong {
-    font-size: 8.2vh;
+    font-size: 65px;
   }
 
   #mainview .left p {
-    width: 90%;
-    font-size: 1.2vw;
+    width: 97%;
+    font-size: 15px;
+  }
+
+  #mainview .contents .left div span {
+    left: 38%;
   }
 
   #mainview .right {
     width: 50%;
   }
 
-  #mainview .line {
+  #mainview .right .main_img {
+    width: 38vh;
+  }
+
+  #mainview .contents .line {
     left: 74%;
   }
 
   #mainview .contents .scrolldown svg {
-    height: 54%;
-    top: 46vh;
-    left: -18vh;
+    height: 48%;
+    top: 48vh;
+    left: -16vh;
   }
 
-  #mainview .contents .scrolldown span {
-    height: 30%;
-    left: -6vw;
-    border: 1px solid #000;
+  #mainview .contents .right .scrolldown span {
+    height: 10%;
+    right: 15%;
   }
 
   #mainview .contents span:nth-child(1) {
-    left: 38%;
+    left: 89%;
   }
 
-  #mainview .contents span:nth-child(2) {
-    left: 87%;
-  }
-
-  #mainview .contents span:nth-child(3) {
-    left: 92%;
+  #mainview .contents span:nth-of-type(2) {
+    left: 95%;
+    top: 25%;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 954px) {
   .container_h {
     width: 90%;
   }
@@ -1014,7 +1024,7 @@ body {
     width: 0.2rem;
     height: 50vh;
     background: #000;
-    left: 50%;
+    left: 50% !important;
     top: 0;
   }
 
@@ -1033,20 +1043,19 @@ body {
     margin: 0 auto;
   }
 
-  #mainview .contents span:nth-child(1) {
-    position: absolute;
-    top: 5%;
-    left: 8%;
+  #mainview .contents .left div span {
+    top: -650px;
+    left: 6%;
     z-index: 1;
   }
 
-  #mainview .contents span:nth-child(2) {
+  #mainview .contents span:nth-child(1) {
     top: 10%;
     left: 82%;
     z-index: 1;
   }
 
-  #mainview .contents span:nth-child(3) {
+  #mainview .contents span:nth-child(2) {
     top: 20%;
     left: 89%;
     z-index: 1;
