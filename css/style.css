@@ -702,8 +702,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15vw;
+  padding: 0 3vw;
   position: relative;
-  border: 1px solid #000;
 }
 
 #work .web .work-item:nth-child(2) {
@@ -714,7 +714,12 @@ body {
   width: 50%;
   position: relative;
   margin-right: 5vw;
-  border: 1px solid #000;
+}
+
+#work .web .work-item:nth-child(2) .img-box {
+  flex-flow: row-reverse;
+  margin-right: 0;
+  margin-left: 5vw;
 }
 
 #work .web .work-item img {
@@ -725,12 +730,11 @@ body {
 #work .web .work-item .text {
   width: 60%;
   letter-spacing: 0.2rem;
-  border: 1px solid #000;
 }
 
 #work .web .work-item .text h2 {
-  font-family: "original_regular";
   font-size: 72px;
+  font-family: "original_regular";
   color: #d00000;
   text-shadow: 0.2vw 0.1vw 0 rgb(44, 43, 43);
   white-space: nowrap;
@@ -739,6 +743,11 @@ body {
 #work .web .work-item:nth-child(2) h2 {
   color: #fcca56;
   font-size: 68px;
+}
+
+#work .web .work-item:nth-child(3) h2 {
+  color: #99c6a8;
+  font-size: 75px;
 }
 
 #work .web .work-item .text strong {
@@ -750,11 +759,6 @@ body {
 #work .web .work-item .text em {
   font-family: "original_black";
   font-size: 190px;
-  color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
-  -moz-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
-  -ms-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
-  -o-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
   z-index: -1;
   position: absolute;
   top: -130px;
@@ -762,12 +766,29 @@ body {
   font-style: normal;
 }
 
-#work .web .work-item .text .em2 {
+#work .web .work-item .text .em1 {
   color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
-  -moz-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
-  -ms-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
-  -o-text-stroke: 0.1vw rgba(252, 202, 86, 0.9);
+  -webkit-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
+  -moz-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
+  -ms-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
+  -o-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
+}
+
+#work .web .work-item .text .em2 {
+  left: 0;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.1vw rgba(255, 209, 103);
+  -moz-text-stroke: 0.1vw rgba(255, 209, 103);
+  -ms-text-stroke: 0.1vw rgba(255, 209, 103);
+  -o-text-stroke: 0.1vw rgba(255, 209, 103);
+}
+
+#work .web .work-item .text .em3 {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.1vw rgb(165, 195, 175);
+  -moz-text-stroke: 0.1vw rgb(165, 195, 175);
+  -ms-text-stroke: 0.1vw rgb(165, 195, 175);
+  -o-text-stroke: 0.1vw rgb(165, 195, 175);
 }
 
 #work .web .work-item .text p {
@@ -801,6 +822,11 @@ body {
 #work .web .work-item .btn3,
 #work .web .work-item .btn4 {
   background-color: #fcca56;
+}
+
+#work .web .work-item .btn5,
+#work .web .work-item .btn6 {
+  background-color: #99c6a8;
 }
 
 #work .web .work-item i {
