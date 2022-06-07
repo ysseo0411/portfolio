@@ -115,7 +115,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 2vw;
+  padding: 0 3vw;
   position: relative;
 }
 
@@ -693,18 +693,21 @@ body {
   margin-top: 26vw;
 }
 
-#work .web {
-  width: 100%;
+#work .container {
+  max-width: 1400px;
 }
 
 #work .web .work-item {
   width: 100%;
   display: flex;
-  flex: 1 1 0;
+  justify-content: space-between;
   margin-bottom: 15vw;
   position: relative;
-  padding: 0 3vw;
   border: 1px solid #000;
+}
+
+#work .web .work-item:nth-child(2) {
+  flex-flow: row-reverse;
 }
 
 #work .web .work-item .img-box {
@@ -722,6 +725,7 @@ body {
 #work .web .work-item .text {
   width: 60%;
   letter-spacing: 0.2rem;
+  border: 1px solid #000;
 }
 
 #work .web .work-item .text h2 {
