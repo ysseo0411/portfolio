@@ -8,7 +8,6 @@ body {
 }
 
 #wrap {
-  /* width: 100%; */
   overflow-x: hidden;
 }
 
@@ -17,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-.container {
+.container:not(#profile .container) {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
@@ -155,7 +154,6 @@ body {
 #mainview .left p {
   font-family: "YUniverse";
   font-size: 2vh;
-  font-weight: 300;
   line-height: 1.8;
   text-align: justify;
   padding-bottom: 2vw;
@@ -195,7 +193,7 @@ body {
 
 #mainview .line {
   position: absolute;
-  left: 80%;
+  left: 78%;
   width: 0.2rem;
   height: 30vh;
   background: #000;
@@ -262,7 +260,7 @@ body {
 
 #about_marquee .content > p {
   font-size: 6vw;
-  line-height: 8vw;
+  line-height: 7.2vw;
   text-align: center;
   font-family: "monument_ultrabold";
 }
@@ -272,9 +270,6 @@ body {
   margin-left: 4.2vw;
   color: #fff;
   -webkit-text-stroke: 0.2rem #000;
-  -moz-text-stroke: 0.2rem #000;
-  -ms-text-stroke: 0.2rem #000;
-  -o-text-stroke: 0.2rem #000;
 }
 
 @keyframes marquee {
@@ -286,63 +281,47 @@ body {
   }
 }
 
-/* about horizontal scroll */
+/* profile horizontal scroll */
 #profile {
-  height: 100vh;
-  /* overflow: hidden; */
   display: flex;
-  left: 0;
 }
 
 #profile .container {
-  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
 }
 
 .pin-wrap {
-  height: 100vh;
   display: flex;
   flex-shrink: 0;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-}
-
-.pin-wrap #about,
-.pin-wrap #skills,
-.pin-wrap #edu {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
-.pin-wrap .contents {
-  width: 100vw;
-  height: 70vh;
-  margin-top: 45px;
-  align-items: center;
-  justify-content: center;
 }
 
 /* about */
+#about {
+  display: flex;
+}
+
 #about .contents {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  padding: 0 4vw;
 }
+
 #about .contents .left {
   position: relative;
-  width: 45%;
+  width: 50%;
 }
 
 #about .contents .left .img-circle {
   display: block;
   width: 36vw;
   height: 36vw;
-  margin: 0.1vw auto;
+  margin: 0 auto;
   border-radius: 50%;
-  /* border: 0.15rem solid #000; */
   position: relative;
   background-color: #fad7d7;
 }
@@ -368,9 +347,6 @@ body {
   line-height: 1.15;
   color: rgba(255, 255, 255, 0);
   -webkit-text-stroke: 0.1vw #000;
-  -moz-text-stroke: 0.1vw #000;
-  -ms-text-stroke: 0.1vw #000;
-  -o-text-stroke: 0.1vw #000;
   width: 35vw;
   height: 100%;
   padding-top: 12vw;
@@ -382,26 +358,22 @@ body {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.2);
   -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 0);
-  -moz-text-stroke: 0.1vw rgba(0, 0, 0, 0);
-  -ms-text-stroke: 0.1vw rgba(0, 0, 0, 0);
-  -o-text-stroke: 0.1vw rgba(0, 0, 0, 0);
 }
 
 #about .contents .img-deco em {
   font-style: normal;
   color: rgba(0, 0, 0, 0.4);
   -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 0);
-  -moz-text-stroke: 0.1vw rgba(0, 0, 0, 0);
-  -ms-text-stroke: 0.1vw rgba(0, 0, 0, 0);
-  -o-text-stroke: 0.1vw rgba(0, 0, 0, 0);
 }
 
 #about .contents .left img {
-  width: 105%;
-  height: 150%;
+  width: 100%;
+  height: 100vh;
   object-fit: contain;
   position: absolute;
-  top: -6vw;
+  top: -9.5vw;
+  left: 0;
+  z-index: 1000;
 }
 
 #about .img-circle span:nth-of-type(1) {
@@ -420,15 +392,15 @@ body {
 
 #about .contents .right {
   position: relative;
-  top: 1vh;
   width: 50%;
-  padding: 0 1.5vw;
+  padding: 0 7vw;
 }
 
 #about .contents .right h2 {
   font-family: "original_regular";
   letter-spacing: 0.2rem;
   font-size: 3.6vw;
+  white-space: nowrap;
 }
 
 #about .contents .right > p {
@@ -444,13 +416,12 @@ body {
 
 #about .right p[class="intro"] {
   font-weight: 700;
-  font-size: 2vw;
+  font-size: 1.7vw;
   line-height: 1.5;
   margin-bottom: 2.2vw;
 }
 
 #about .right p[class="desc"] {
-  width: 90%;
   font-style: normal;
   font-weight: 300;
   margin-top: 2.4vw;
@@ -461,16 +432,34 @@ body {
 }
 
 /* about - skills */
+#skills {
+  position: relative;
+  /* background-color: #fc0; */
+}
+
 #skills .contents {
-  padding-top: 1.5vw;
+  width: 100%;
+  position: relative;
+  height: 40vw;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #000;
 }
 
 #skills h2 {
+  position: absolute;
+  left: 40%;
   font-family: "original_regular";
   letter-spacing: 0.2rem;
-  font-size: 3.3vw;
-  margin-bottom: 2.9vw;
-  text-align: center;
+  font-size: 3.8vw;
+  z-index: 10;
+}
+
+#skills .contents > div {
+  height: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #skills .box {
@@ -478,7 +467,6 @@ body {
   height: 22.5vw;
   border-radius: 35vw 35vw;
   border: 0.15rem solid #000;
-  margin: 0 auto;
   position: relative;
   background-color: #fff;
 }
@@ -545,59 +533,73 @@ body {
   top: 1vw;
 }
 
-#skills span:nth-of-type(1) {
+#skills .contents span:nth-of-type(1) {
   position: absolute;
-  top: 18.5vh;
-  left: 9.2%;
+  top: 0;
+  left: 0;
 }
 
-#skills .icon1-line {
-  width: 0.2rem;
-  height: 10vh;
-  position: absolute;
-  left: 12vw;
+#skills .line:nth-of-type(1) {
+  position: relative;
+  left: 0;
   top: 60px;
-  background-color: #000;
+  width: 100px;
+  height: 150px;
 }
 
-#skills span:nth-of-type(2) {
-  position: absolute;
-  bottom: 10.8vh;
-  right: 5.7%;
-}
-
-#skills .icon2-line {
+#skills .contents span:nth-of-type(1) {
   width: 0.2rem;
-  height: 10vh;
+  height: 13vh;
   position: absolute;
-  right: 8.3vw;
+  left: 0;
+}
+
+#skills .contents span:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#skills .line:nth-of-type(2) {
+  width: 0.2rem;
+  height: 13vh;
+  position: absolute;
+  right: 42px;
   bottom: 0;
   background-color: #000;
 }
 
 /* about - level of education */
-#edu .contents {
+#edu {
   display: flex;
 }
 
-#edu .left {
-  width: 45%;
-  margin-left: 3vw;
+#edu .contents {
+  display: flex;
+  width: 100%;
+  height: 38vw;
+  justify-content: space-between;
+  padding: 0 3vw;
+}
+
+#edu .contents .left {
+  position: relative;
+  width: 50%;
 }
 
 #edu .left span:nth-of-type(1) {
   position: absolute;
   top: 13%;
   left: 0;
+  display: none;
 }
 #edu .left h2 {
   display: inline-block;
   font-family: "original_regular";
   font-size: 3.8vw;
   letter-spacing: 0.2rem;
-  margin-bottom: 2vw;
+  margin-bottom: 4vw;
   position: relative;
-  top: -2.4vw;
 }
 
 #edu .left p {
@@ -613,26 +615,26 @@ body {
   font-size: 2vw;
 }
 
-#edu .right {
-  width: 47%;
-  height: 100%;
+#edu .contents .right {
+  width: 50%;
+  height: 38vw;
   position: relative;
-  padding-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#edu .right .about-img {
-  width: 22.5vw;
-  height: 95%;
-  border: 0.2rem solid #000;
-  border-radius: 300px 300px;
-  background: url("../src/img/about02.png") no-repeat center center / cover;
-  margin-left: 10vw;
+#edu .right img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 415px 415px;
+  border: 0.25rem solid #000;
 }
 
 #edu .right span:nth-of-type(1) {
   position: absolute;
-  right: 38vw;
-  bottom: 3vw;
+  right: 39vw;
+  bottom: 2vw;
 }
 #edu .right span:nth-of-type(2) {
   position: absolute;
@@ -641,8 +643,9 @@ body {
 }
 #edu .right span:nth-of-type(3) {
   position: absolute;
-  right: 0;
-  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: -1;
 }
 
@@ -681,12 +684,9 @@ body {
   padding: 0.3vh 0;
   font-size: clamp(3vw, 5vw, 7vw);
   -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 1);
-  -moz-text-stroke: 0.1vw rgba(0, 0, 0, 1);
-  -ms-text-stroke: 0.1vw rgba(0, 0, 0, 1);
-  -o-text-stroke: 0.1vw rgba(0, 0, 0, 1);
 }
 
-/* work */
+/* work - web */
 #work {
   position: relative;
   width: 100%;
@@ -736,8 +736,9 @@ body {
   font-size: 72px;
   font-family: "original_regular";
   color: #d00000;
-  text-shadow: 0.2vw 0.1vw 0 rgb(44, 43, 43);
+  /* text-shadow: 0.2vw 0.1vw 0 rgb(44, 43, 43); */
   white-space: nowrap;
+  margin-bottom: 10px;
 }
 
 #work .web .work-item:nth-child(2) h2 {
@@ -769,26 +770,17 @@ body {
 #work .web .work-item .text .em1 {
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
-  -moz-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
-  -ms-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
-  -o-text-stroke: 0.1vw rgba(208, 0, 0, 0.3);
 }
 
 #work .web .work-item .text .em2 {
   left: 0;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.1vw rgba(255, 209, 103);
-  -moz-text-stroke: 0.1vw rgba(255, 209, 103);
-  -ms-text-stroke: 0.1vw rgba(255, 209, 103);
-  -o-text-stroke: 0.1vw rgba(255, 209, 103);
 }
 
 #work .web .work-item .text .em3 {
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.1vw rgb(165, 195, 175);
-  -moz-text-stroke: 0.1vw rgb(165, 195, 175);
-  -ms-text-stroke: 0.1vw rgb(165, 195, 175);
-  -o-text-stroke: 0.1vw rgb(165, 195, 175);
 }
 
 #work .web .work-item .text p {
@@ -798,7 +790,7 @@ body {
   text-align: justify;
   line-height: 1.5;
   position: relative;
-  margin-top: 2.8vw;
+  margin-top: 2vw;
 }
 
 #work .web .work-item .btn {
@@ -835,73 +827,291 @@ body {
   padding-left: 22px;
 }
 
-/* work - css animation */
-#work .css_ani {
-  position: relative;
-}
-
-#work .css_ani .title {
-  width: 100vh;
-  height: auto;
-  display: block;
+/* work - script */
+#work .script .title {
+  width: 780px;
+  height: 213px;
+  margin: 0 auto;
   position: relative;
   font-family: "original-regular";
-  margin: 0 auto;
   margin-bottom: 30vh;
 }
 
-#work .css_ani .title p {
-  position: relative;
-  left: 2vw;
+#work .script .title > span {
+  position: absolute;
+  left: 49px;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 1);
-  -moz-text-stroke: 0.1vw rgba(0, 0, 0, 1);
-  -ms-text-stroke: 0.1vw rgba(0, 0, 0, 1);
-  -o-text-stroke: 0.1vw rgba(0, 0, 0, 1);
-  font-size: 10vw;
+  font-size: 130px;
 }
 
-#work .css_ani .title em {
+#work .script .title em {
   position: absolute;
-  top: 9.5vw;
-  right: 0vw;
+  top: 112px;
+  right: 65px;
   color: #000;
-  font-size: 8.7vw;
+  font-size: 120px;
   text-shadow: 0.2vw 0.1vw 0 #fff;
   /* font-style: normal; */
 }
 
-#work .css_ani .star5 svg {
+#work .title span:nth-of-type(2) {
   position: absolute;
-  left: 38vw;
-  top: -2.5vw;
+  left: 48%;
+  top: -20%;
 }
 
-#work .css_ani .star6 svg {
+#work .title span:nth-of-type(3) {
+  width: 150px;
   position: absolute;
-  right: 13vw;
-  top: 15vw;
+  left: 669px;
+  top: 177px;
 }
 
-#work .css_ani .contents {
+#work .script .contents {
   position: relative;
-  min-width: 1300px;
-  width: 95%;
-  height: auto;
-  margin: 0 auto;
+  padding: 0 3vw;
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-flow: wrap;
+  flex-wrap: wrap;
+}
+
+#work .script .box {
+  position: relative;
+  display: flex;
+  flex: 0 0 530px;
+  width: 230px;
+  height: 1122px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+#work .script .box .text {
+  width: 100%;
+  height: 200px;
+}
+#work .script .box .text h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "original_regular";
+  font-size: 74px;
+  color: #d80913;
+  -webkit-text-stroke: 0.1px rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 0 #000;
+}
+
+#work .script .box .text p {
+  width: 85%;
+  font-family: "YUniverse";
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+#work .script .contents .box .top-box {
+  width: 497px;
+  height: 856px;
+  position: absolute;
+  top: 229px;
+  z-index: 2;
+  border: 0.2rem solid #000;
+  border-radius: 29px;
+  background-color: #f9e8e2;
+}
+
+#work .script .box .top-box .script-cont {
+  margin-top: 25px !important;
+  width: 90%;
+  height: 734px;
+  margin: 0 auto;
+  /* border: 2px solid #000; */
+  border-radius: 32px 32px;
+}
+
+#work .script .box .top-box .musicplayer {
+  width: 100%;
+  height: 100%;
+  border-radius: 32px 32px;
+}
+
+#work .script .contents .box .top-box img {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#work .script .contents .box .top-box a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Abel";
+  width: 90%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  /* padding: 0 17px; */
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 32px 32px;
+  margin-top: 15px;
+}
+
+#work .script .contents .box .middle-box {
+  position: absolute;
+  right: 15px;
+  bottom: 16px;
+  z-index: 1;
+  width: 485px;
+  height: 840px;
+  border: 0.2rem solid #000;
+  border-radius: 29px;
+  background-color: #fff;
+}
+#work .script .contents .box .bottom-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 485px;
+  height: 810px;
+  border: 0.2rem solid #000;
+  border-radius: 29px;
+  background-color: #fff;
+  box-shadow: 7px 7px 0 0 #0d0d0d;
+}
+
+/* footer */
+#footer .container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+#footer .title {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  color: #b4b4b4;
+  margin-bottom: 70px;
+}
+
+#footer .contents {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3vw;
+}
+
+#footer .contents span:nth-child(1) {
+  position: absolute;
+  top: -24%;
+  right: 16%;
+}
+
+#footer .contents span:nth-child(2) {
+  position: absolute;
+  top: 43%;
+  left: 27%;
+}
+
+#footer .contents span:nth-child(3) {
+  position: absolute;
+  top: 101%;
+  right: 16%;
+}
+
+#footer .title > span {
+  font-family: "original_regular";
+  font-size: 120px;
+  text-shadow: 2px 3px 0 #000;
+}
+
+#footer .left {
+  width: 50%;
+  padding-left: 10px;
+  position: relative;
+}
+
+#footer .left h2 {
+  font-family: "original_regular";
+  font-size: 70px;
+  text-align: center;
+  line-height: 1.1;
+  color: #d80913;
+  text-shadow: 2px 3px 0 #fff;
+}
+
+#footer .left i {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-right: 12px;
+  color: rgb(163, 163, 163);
+}
+
+#footer .left p {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "YUniverse";
+  padding-left: 130px;
+}
+
+#footer .right {
+  width: 50%;
+  position: relative;
+}
+
+#footer .right form {
+  padding: 5px;
+}
+
+#footer .right form input {
+  border: none;
+  outline: none;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  padding: 1% 2vw;
+  height: 3.5vw;
+  font-size: 1.1vw;
+  font-family: "YUniverse";
+  font-weight: 900;
+  background: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid #000;
+}
+
+#footer .right form .message textarea {
+  border: none;
+  outline: none;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 1vw 2vw;
+  height: 215px;
+  font-size: 1.1vw;
+  font-family: "YUniverse";
+  font-weight: 900;
+  background: rgba(255, 255, 255, 0.2);
   border: 1px solid #000;
 }
 
-#work .css_ani .box {
-  display: flex;
-  width: 30vw;
-  height: 32vw;
-  margin-bottom: 10vw;
-  border: 1px solid #000;
+#footer .right form .btn {
+  display: inline-block;
+  padding: 0.9vw 3vw;
+  margin-left: 28px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #000;
+  color: #fff;
+  font-family: "YUniverse";
+  font-weight: 900;
+  cursor: pointer;
 }
 
 /* 미디어 쿼리 */
@@ -959,12 +1169,12 @@ body {
   }
 
   #mainview .contents span:nth-child(1) {
-    left: 89%;
+    left: 87%;
   }
 
   #mainview .contents span:nth-of-type(2) {
-    left: 95%;
-    top: 25%;
+    left: 92%;
+    top: 28%;
   }
 }
 
