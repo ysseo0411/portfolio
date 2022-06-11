@@ -11,13 +11,13 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #fff;
+  background: linear-gradient(rgb(226, 226, 226) 0%, rgb(240, 222, 255) 100%);
 }
 .wrapper {
-  padding: 25px;
+  padding: 20px 25px;
   border-radius: 10px;
-  background: #dfe5f8;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background: #f8f8f8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .cards,
 .card,
@@ -27,8 +27,8 @@ body {
   justify-content: center;
 }
 .cards {
-  height: 400px;
-  width: 400px;
+  height: 530px;
+  width: 395px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -39,8 +39,8 @@ body {
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
-  height: calc(100% / 4 - 10px);
-  width: calc(100% / 4 - 10px);
+  height: calc(100% / 4 - 18px);
+  width: calc(100% / 4 - 12px);
 }
 .card.shake {
   animation: shake 0.35s ease-in-out;
@@ -75,7 +75,7 @@ body {
   transition: transform 0.25s linear;
 }
 .card .front-view img {
-  width: 32px;
+  width: 100px;
 }
 .card .back-view img {
   max-width: 45px;

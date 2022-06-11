@@ -8,52 +8,17 @@ ul {
 }
 
 body {
-  height: 100%;
+  background-color: #00104d;
+  height: 100vh;
   overflow: hidden;
 }
-
-.outer {
-  width: 400px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30000;
+.wrapper {
+  height: 100vh;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
-
-.outer h2 {
-  font-size: 40px;
-  color: #000;
-  text-align: center;
-}
-
-.game {
-  display: none;
-}
-
-.outer button.start {
-  padding: 10px 25px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  background-color: #000;
-  color: #fff;
-  z-index: 10;
-  font-weight: 500;
-  font-size: 16px;
-  transition: 0.2s;
-}
-
-.outer button.start:hover {
-  background: #fc0;
-  color: #fff;
-}
-
 .game-text {
   display: none;
   justify-content: center;
@@ -62,52 +27,97 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(0, 0, 0, 0.7);
   left: 0;
   top: 0;
   color: #fff;
   font-size: 50px;
 }
-
-.score_board {
-  height: 200px;
-  width: 100px;
-  border: 2px solid red;
-}
-
 .game-text > button {
-  padding: 10px 25px;
+  padding: 0.5rem 1rem;
   color: #fff;
-  background: #000;
+  background: salmon;
   border: none;
   cursor: pointer;
-  margin-top: 15px;
 }
 
-.game-text > button:hover {
-  background: #d00000;
-  color: #fff;
+.title {
+  color: #ffffff;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 1vw;
+  font-size: 40px;
+  /* margin-top: 5vw; */
 }
-
-a:nth-child(1) {
-  filter: hue-rotate(270deg);
-}
-
-a:nth-child(2) {
-  filter: hue-rotate(110deg);
-}
-
-.score {
-  color: #000;
-  margin-top: 1.2rem;
+.field {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  font-size: 36px;
-  margin-bottom: 2rem;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5px;
+}
+
+.start-button {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  padding: 15px 10px;
+  background-color: #000000;
+  border: 3px groove #ffffff;
+  border-radius: 7.5px;
+  margin-bottom: 2.5px;
+}
+
+.score-wrapper {
+  background-color: #000000;
+  border: 3px groove #ffffff;
+  border-radius: 7.5px;
+  padding: 15px 10px;
+}
+.score_tit {
+  /* position: absolute;
+  top: 9.5vw;
+  left: 5%; */
+  font-size: 20px;
+  color: #ffffff;
+  /* font-family: "Keania One", cursive; */
+  font-family: "Press Start 2P", cursive;
+  padding-bottom: 15px;
+}
+.score {
+  /* position: absolute;
+  top: 9.5vw;
+  left: 13%; */
+  font-size: 40px;
+  color: rgb(255, 216, 97);
+  /* font-family: "Keania One", cursive; */
+  font-family: "Press Start 2P", cursive;
+}
+
+.playground {
+  /* margin-bottom: 50px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  width: 320px;
+  height: 510px;
+  border: 7px double #ffffff;
+  border-radius: 5px;
 }
 
 .playground > ul {
-  border: 1px solid #333;
-  width: 250px;
+  /* border: 1px solid #333;
+  width: 500px;
+  margin: 0 auto; */
+
+  width: 315px;
   margin: 0 auto;
 }
 
@@ -123,30 +133,97 @@ a:nth-child(2) {
 .playground > ul > li > ul > li {
   width: 25px;
   height: 25px;
-  outline: 1px solid #ccc;
+  outline: 0.5px solid #000000;
 }
 
-.bar {
-  background: #8bcdf7;
+/* .playground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 53, 104);
+    width: 320px;
+    height: 540px;
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
 
-.tree {
-  background: #fbefc0;
-  /* 정사각형 모양 */
+.playground>ul {
+    width: 275px;
+    margin: 0 auto;
 }
 
-.zee {
-  background: #ffd84c;
+.playground>ul>li {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(9, 17, 26);
 }
 
-.elLeft {
-  background: #ef9444;
+.playground>ul>li>ul {
+    display: flex;
 }
 
-.elRight {
-  background: #ef4a29;
-}
+.playground>ul>li>ul>li {
+    width: 20px;
+    height: 20px;
+} */
 
 .square {
-  background: #a1d75a;
+  background: #7fdd50;
+  outline: 0.5px solid #ffffff;
+}
+.bar {
+  background: #ff8649;
+  outline: 0.5px solid #ffffff;
+}
+.tree {
+  background: #e33821;
+  outline: 0.5px solid #ffffff;
+}
+.zee {
+  background: #ffe432;
+  outline: 0.5px solid #ffffff;
+}
+.elLeft {
+  background: #5882ec;
+  outline: 0.5px solid #ffffff;
+}
+.elRight {
+  background: #a83ee6;
+  outline: 0.5px solid #ffffff;
+}
+
+@media (max-width: 580px) {
+  .imag {
+    display: none;
+  }
+
+  .field {
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .about {
+    font-size: 10px;
+  }
+  .score {
+    font-size: 20px;
+  }
+  .score-text {
+    margin-bottom: 5px;
+  }
+  .help {
+    display: none;
+  }
+
+  .score-wrapper {
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+
+  .about-name {
+    display: none;
+  }
 }
