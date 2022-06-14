@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" style="overflow-y:hidden">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -112,10 +112,10 @@
             <div class="line" aria-label="hidden"></div>
             <div class="left">
               <div>
-                <div data-scroll data-scroll-speed="2" class="text">
-                  <h2>Hello!</h2>
-                  <strong>I'm Yeonsoo Seo</strong>
-                  <p>
+                <div class="text">
+                  <h2 data-scroll data-scroll-speed="2">Hello!</h2>
+                  <strong data-scroll data-scroll-speed="3">I'm Yeonsoo Seo</strong>
+                  <p data-scroll data-scroll-speed="2.5">
                     안녕하세요! 만나서 반갑습니다. 프론트엔드 개발자를 희망하는
                     서연수입니다. 저의 포트폴리오에 오신 것을 환영합니다. 정성껏
                     제작한 저의 포트폴리오가 마음에 드신다면 꼭 연락해 주세요!
@@ -123,8 +123,8 @@
                     :) 감사합니다.
                   </p>
                 </div>
-                <a href="#">RESUME DOWNLOAD</a>
-                <span>
+                <a href="#" data-scroll data-scroll-speed="2">RESUME DOWNLOAD</a>
+                <span data-scroll data-scroll-speed="3">
                   <svg
                     width="76%"
                     height="10vw"
@@ -208,13 +208,13 @@
               <div class="contents">
                 <div class="left">
                   <img src="../src/img/about01.png" alt="어바웃이미지" />
+                  <div class="img-deco" data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal">
+                    Frontend Developer<br />
+                    <strong>Frontend Developer</strong><br />
+                    <em>Frontend Developer</em>
+                  </div>
                   <div class="img-circle">
-                    <div class="img-deco">
-                      Frontend Developer<br />
-                      <strong>Frontend Developer</strong><br />
-                      <em>Frontend Developer</em>
-                    </div>
-                    <span>
+                    <span data-scroll data-scroll-speed="0.9" data-scroll-direction="horizontal">
                       <svg
                         width="142"
                         height="150"
@@ -236,7 +236,7 @@
                         </defs>
                       </svg>
                     </span>
-                    <span>
+                    <span data-scroll data-scroll-speed="1.4" data-scroll-direction="horizontal">
                       <svg
                         width="350"
                         height="350"
@@ -263,7 +263,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="right">
+                <div class="right" data-scroll data-scroll-speed="1.2" data-scroll-direction="horizontal">
                   <h2>Introduce myself &#129392;</h2>
                   <p class="intro">
                     안녕하세요!<br />
@@ -377,21 +377,6 @@
             <div class="container">
               <div class="contents">
                 <div class="left">
-                  <span>
-                    <svg
-                      width="118"
-                      height="118"
-                      viewbox="0 0 100 100"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="m48.444 87.215-3.507-20.197c-1.632-9.42-9.044-16.769-18.479-18.338L6.23 45.329l20.197-3.507c9.419-1.632 16.768-9.044 18.338-18.479l3.35-20.228 3.508 20.197c1.632 9.42 9.044 16.768 18.479 18.338l20.228 3.351-20.197 3.515a22.48 22.48 0 0 0-18.338 18.47l-3.351 20.23Z"
-                        stroke="#000"
-                        stroke-miterlimit="10"
-                      />
-                    </svg>
-                  </span>
                   <h2>Level of education &#128421;</h2>
                   <p>
                     <strong>2021. 10 ~ 2022. 03</strong><br />
@@ -464,8 +449,8 @@
                   </span>
                   <span>
                     <svg
-                      width="120%"
-                      height="621"
+                      width="650"
+                      height="721"
                       fill="none"
                       viewBox="0 0 771 621"
                     >
@@ -518,15 +503,8 @@
                     사용해 슬라이더를 구현했습니다. 또한 lightbox 플러그인을
                     이용해 모달창을 사용하였습니다.
                   </p>
-
-                  <a href="#" class="btn btn1"
-                    >SITE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="btn btn2"
-                    >CODE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
+                  <a href="#" class="btn btn1">SITE VIEW</a>
+                  <a href="#" class="btn btn2">CODE VIEW</a>
                 </div>
               </div>
 
@@ -544,15 +522,8 @@
                     슬라이드를 구현하였고, 구글 웹 API를 사용하여 유투브의
                     영상이 팝업으로 나타나도록 작업하였습니다.
                   </p>
-
-                  <a href="#" class="btn btn3"
-                    >SITE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="btn btn4"
-                    >CODE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
+                  <a href="#" class="btn btn3">SITE VIEW</a>
+                  <a href="#" class="btn btn4">CODE VIEW</a>
                 </div>
               </div>
 
@@ -570,93 +541,65 @@
                     슬라이드를 구현하였고, 구글 웹 API를 사용하여 유투브의
                     영상이 팝업으로 나타나도록 작업하였습니다.
                   </p>
-
-                  <a href="#" class="btn btn5"
-                    >SITE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="btn btn6"
-                    >CODE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
+                  <a href="#" class="btn btn5">SITE VIEW</a>
+                  <a href="#" class="btn btn6">CODE VIEW</a>
                 </div>
               </div>
 
               <div class="work-item">
                 <div class="img-box">
-                  <img src="../src/img/web3.png" alt="메가박스사이트이미지" />
+                  <img src="../src/img/web3.png" alt="php사이트이미지" />
                 </div>
                 <div class="text">
                   <h2>PHP Site</h2>
                   <strong>PHP 사이트</strong>
-                  <em class="em3">03</em>
+                  <em class="em4">04</em>
                   <p>
                     미디어쿼리를 이용하여 다양한 디바이스 크기에 반응하도록
                     작업하였습니다. 또한 swiper 라이브러리를 이용한 이미지
                     슬라이드를 구현하였고, 구글 웹 API를 사용하여 유투브의
                     영상이 팝업으로 나타나도록 작업하였습니다.
                   </p>
-
-                  <a href="#" class="btn btn5"
-                    >SITE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="btn btn6"
-                    >CODE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
+                  <a href="#" class="btn btn7">SITE VIEW</a>
+                  <a href="#" class="btn btn8">CODE VIEW</a>
                 </div>
               </div>
 
               <div class="work-item">
                 <div class="img-box">
-                  <img src="../src/img/web3.png" alt="메가박스사이트이미지" />
+                  <img src="../src/img/web5.png" alt="리액트사이트이미지" />
                 </div>
                 <div class="text">
                   <h2>React Site</h2>
                   <strong>리액트 사이트</strong>
-                  <em class="em3">03</em>
+                  <em class="em5">05</em>
                   <p>
                     미디어쿼리를 이용하여 다양한 디바이스 크기에 반응하도록
                     작업하였습니다. 또한 swiper 라이브러리를 이용한 이미지
                     슬라이드를 구현하였고, 구글 웹 API를 사용하여 유투브의
                     영상이 팝업으로 나타나도록 작업하였습니다.
                   </p>
-
-                  <a href="#" class="btn btn5"
-                    >SITE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="btn btn6"
-                    >CODE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
+                  <a href="#" class="btn btn9">SITE VIEW</a>
+                  <a href="#" class="btn btn10">CODE VIEW</a>
                 </div>
               </div>
 
               <div class="work-item">
                 <div class="img-box">
-                  <img src="../src/img/web3.png" alt="메가박스사이트이미지" />
+                  <img src="../src/img/web6.png" alt="뷰사이트이미지" />
                 </div>
                 <div class="text">
                   <h2>Vue Site</h2>
                   <strong>뷰 사이트</strong>
-                  <em class="em3">03</em>
+                  <em class="em6">06</em>
                   <p>
                     미디어쿼리를 이용하여 다양한 디바이스 크기에 반응하도록
                     작업하였습니다. 또한 swiper 라이브러리를 이용한 이미지
                     슬라이드를 구현하였고, 구글 웹 API를 사용하여 유투브의
                     영상이 팝업으로 나타나도록 작업하였습니다.
                   </p>
-
-                  <a href="#" class="btn btn5"
-                    >SITE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="btn btn6"
-                    >CODE VIEW
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i
-                  ></a>
+                  <a href="#" class="btn btn11">SITE VIEW</a>
+                  <a href="#" class="btn btn12">CODE VIEW</a>
                 </div>
               </div>
             </div>
@@ -709,13 +652,7 @@
                     </p>
                   </div>
                   <div class="top-box">
-                    <div class="script-cont">
-                      <iframe
-                        class="musicplayer"
-                        src="https://ysseo0411.github.io/portfolio/js_game/musicplayer/"
-                        frameborder="0"
-                      ></iframe>
-                    </div>
+                    <div class="img-box i1"></div>
                     <a href="#">CODE VIEW</a>
                   </div>
                   <div class="middle-box"></div>
@@ -731,13 +668,7 @@
                     </p>
                   </div>
                   <div class="top-box">
-                    <div class="script-cont">
-                      <iframe
-                        class="puzzle"
-                        src="https://ysseo0411.github.io/portfolio/js_game/puzzle/"
-                        frameborder="0"
-                      ></iframe>
-                    </div>
+                    <div class="img-box i2"></div>
                     <a href="#">CODE VIEW</a>
                   </div>
                   <div class="middle-box"></div>
@@ -752,13 +683,7 @@
                     </p>
                   </div>
                   <div class="top-box">
-                    <div class="script-cont">
-                      <iframe
-                        class="cardgame"
-                        src="https://ysseo0411.github.io/portfolio/js_game/cardgame/"
-                        frameborder="0"
-                      ></iframe>
-                    </div>
+                    <div class="img-box i3"></div>
                     <a href="#">CODE VIEW</a>
                   </div>
                   <div class="middle-box"></div>
@@ -773,13 +698,7 @@
                     </p>
                   </div>
                   <div class="top-box">
-                    <div class="script-cont">
-                      <iframe
-                        class="typing"
-                        src="https://ysseo0411.github.io/portfolio/js_game/typing/"
-                        frameborder="0"
-                      ></iframe>
-                    </div>
+                    <div class="img-box i4"></div>
                     <a href="#">CODE VIEW</a>
                   </div>
                   <div class="middle-box"></div>
@@ -794,13 +713,7 @@
                     </p>
                   </div>
                   <div class="top-box">
-                    <div class="script-cont">
-                      <iframe
-                        class="tetris"
-                        src="https://ysseo0411.github.io/portfolio/js_game/tetris/"
-                        frameborder="0"
-                      ></iframe>
-                    </div>
+                    <div class="img-box i5"></div>
                     <a href="#">CODE VIEW</a>
                   </div>
                   <div class="middle-box"></div>
@@ -815,13 +728,7 @@
                     </p>
                   </div>
                   <div class="top-box">
-                    <div class="script-cont">
-                      <iframe
-                        class="typingmaster"
-                        src="https://ysseo0411.github.io/portfolio/js_game/typingmaster/"
-                        frameborder="0"
-                      ></iframe>
-                    </div>
+                    <div class="img-box i6"></div>
                     <a href="#">CODE VIEW</a>
                   </div>
                   <div class="middle-box"></div>
@@ -904,37 +811,27 @@
                 <div class="line"></div>
                 <div class="box">
                   <div class="left">
-                    <div class="img-box">
+                    <div class="img-box csi1"
+                    onclick="window.open('https://codepen.io/ysseo0411/pen/qBxLdKp')">
                     </div>
                   </div>
                   <div class="right">
-                    <h2>CSS<br>Animation</h2>
-                    <p>
-                      소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다.
-                      소개글입니다. 소개글입니다. 소개글입니다.
-                    </p>
+                    <div class="text">
+                      <h2>Planet<br>Animation</h2>
+                      <p>
+                        소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다.
+                        소개글입니다. 소개글입니다. 소개글입니다.
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div class="box">
                   <div class="left">
-                    <div class="img-box">
+                    <div class="img-box csi2 ">
                     </div>
                   </div>
                   <div class="right">
-                    <h2>CSS<br>Animation</h2>
-                    <p>
-                      소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다.
-                      소개글입니다. 소개글입니다. 소개글입니다.
-                    </p>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="img-box">
-                    </div>
-                  </div>
-                  <div class="right">
-                    <h2>Animation</h2>
+                    <h2>Cube<br>Animation</h2>
                     <p>
                       소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다.
                       소개글입니다. 소개글입니다. 소개글입니다.
@@ -943,11 +840,24 @@
                 </div>
                 <div class="box">
                   <div class="left">
-                    <div class="img-box">
+                    <div class="img-box csi3">
                     </div>
                   </div>
                   <div class="right">
-                    <h2>Animation</h2>
+                    <h2>Tail<br>Animation</h2>
+                    <p>
+                      소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다.
+                      소개글입니다. 소개글입니다. 소개글입니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="left">
+                    <div class="img-box csi4">
+                    </div>
+                  </div>
+                  <div class="right">
+                    <h2>Wave<br>Animation</h2>
                     <p>
                       소개글입니다. 소개글입니다. 소개글입니다. 소개글입니다.
                       소개글입니다. 소개글입니다. 소개글입니다.
