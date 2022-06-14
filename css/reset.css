@@ -111,3 +111,12 @@ label {
   margin: 0;
   padding: 0;
 }
+
+/* scroll bar */
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
       scroller: pageContainer, //locomotive scroll
       scrub: true,
       trigger: "#profile",
-      markers: true,
+      markers: false,
       pin: true,
       // anticipatePin: 1,
       start: "#about",

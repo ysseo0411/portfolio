@@ -4,28 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tetris</title>
+    <title>TETRIS</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body>
-    <div class="outer">
-      <h2>TETRIS GAME</h2>
-      <button class="start">START!</button>
-    </div>
     <div class="wrapper">
-      <div class="game">
-        <div class="game-text">
-          <span>Game Over</span>
-          <button>RESTART</button>
+      <div class="game-text">
+        <span>게임종료</span>
+        <button>다시시작</button>
+      </div>
+      <div class="title">
+        <span style="color: #e33821">T</span
+        ><span style="color: #5cc527">E</span
+        ><span style="color: #e33821">T</span
+        ><span style="color: #ff8649">R</span
+        ><span style="color: #5882ec">I</span
+        ><span style="color: #ffe432">S</span>-<span style="color: #a83ee6"
+          >G</span
+        ><span style="color: #a83ee6">A</span
+        ><span style="color: #5882ec">M</span
+        ><span style="color: #5cc527">E</span>
+      </div>
+      <div class="field">
+        <div class="info">
+          <a class="start-button">START</a>
+          <div class="score-wrapper">
+            <div class="score_tit">SCORE</div>
+            <div class="score">0</div>
+          </div>
         </div>
-        <div class="score">0</div>
+
         <div class="playground">
           <ul></ul>
         </div>
       </div>
     </div>
-    <!-- js -->
+
     <script src="js/tetris.js" type="module"></script>
   </body>
 </html>
