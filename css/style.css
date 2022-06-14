@@ -7,6 +7,10 @@ body {
   transition: 0.3s ease-out;
 }
 
+#wrap {
+  overflow-x: hidden;
+}
+
 .container_h {
   width: 95%;
   margin: 0 auto;
