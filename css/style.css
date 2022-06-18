@@ -1,12 +1,5 @@
 @charset "utf-8";
 @import "font.css";
-
-/* layout */
-body {
-  /* background-color: #f8e8c8; */
-  transition: 0.3s ease-out;
-}
-
 /* loading */
 #loader-wrapper {
   position: absolute;
@@ -95,6 +88,22 @@ body {
   transition: all 0.5s 0.3s ease-out;
 }
 
+/* c-scrollbar */
+.c-scrollbar {
+  width: 8.5px;
+  background: rgb(215, 215, 215);
+}
+
+.c-scrollbar_thumb {
+  background-color: #fdb1b1;
+}
+
+/* layout */
+body {
+  background-color: #f8e8c8;
+  transition: 0.3s ease-out;
+}
+
 #wrap {
   overflow: hidden;
 }
@@ -109,16 +118,6 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   /* position: relative; */
-}
-
-/* c-scrollbar */
-.c-scrollbar {
-  width: 8.5px;
-  background: rgb(215, 215, 215);
-}
-
-.c-scrollbar_thumb {
-  background-color: #fdb1b1;
 }
 
 /* background settings */
@@ -214,6 +213,50 @@ body {
   justify-content: space-between;
   padding: 0 3vw;
   position: relative;
+}
+
+#mainview .blink:nth-of-type(1) {
+  -webkit-animation: blink 0.5s ease-in infinite alternate-reverse;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#mainview .blink:nth-of-type(2) {
+  -webkit-animation: blink 0.52s ease-in infinite alternate-reverse;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #mainview .left {
@@ -1403,6 +1446,72 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 3vw;
+}
+
+#footer .blink:nth-of-type(1) {
+  -webkit-animation: blink 0.45s ease-in-out infinite alternate-reverse;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#footer .blink:nth-of-type(2) {
+  -webkit-animation: blink 0.55s ease-in-out infinite alternate-reverse;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#footer .blink:nth-of-type(3) {
+  -webkit-animation: blink 0.62s ease-in-out infinite alternate-reverse;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #footer .contents span:nth-child(1) {

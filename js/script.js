@@ -31,3 +31,22 @@ function imagesProgress() {
     }
   }
 }
+
+// 메뉴 간 움직임
+// $("a").click(function () {
+//   $("html, body").animate(
+//     {
+//       scrollTop: $($.attr(this, "href")).offset().top,
+//     },
+//     500
+//   );
+//   return false;
+// });
+
+// 부드러운 움직임
+// function scrollMove(el, navHeight) {
+//   var offset = el.offset().top;
+//   var totalPos = offset - navHeight;
+
+//   $("html, body").animate({ scrollTop: totalPos }, 1200);
+// }
