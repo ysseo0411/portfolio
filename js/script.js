@@ -117,5 +117,22 @@ navbarMenu.addEventListener("click", (event) => {
 });
 
 // script 버튼 호버 효과
-let btnhover = document.querySelector(".script .top-box a");
-let middlebox = document.querySelector(".script .middle-box");
+$(".script .btn a").hover(
+  function () {
+    $(".script .middle-box").css({
+      "background-color": "#b5e5c4",
+      transition: "0.2s",
+    });
+    $(".script .bottom-box").css({ "background-color": "#ccc" });
+  },
+  function () {
+    $(".script .middle-box, .script .bottom-box").css(
+      "background-color",
+      "#fff"
+    );
+  }
+);
+
+function btnclick() {
+  $(".script .top-box").css({});
+}
