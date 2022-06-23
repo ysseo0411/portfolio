@@ -36,26 +36,25 @@
   </head>
 
   <body>
-  <!-- progress -->
-    <div class="preload">
-      <div id="loader-wrapper">
-        <div class="loader">
-          <h2 class = "progress-text">0%</h2>
-          <div class="loader-line a-loop"></div>
-        </div>
-        <div class="loader-section"></div>
-      </div>
-    </div>  
+    <div class="progress" id="progress">
+      <div class="loader-wrapper">
+        <span class="progress-text">0%</span> 
+            <div class="loader">
+              <div class="loader-line a-loop"></div>
+            </div> 
+       </div>
+    </div>
+ <!-- // progress --> 
 
     <header id="header">
       <div class="container_h">
           <div class="contents clearfix">
-            <h1><a href="#mainview">YEONSOO'S PORTFOLIO</a></h1>
+            <h1 data-link="#mainview">YEONSOO'S PORTFOLIO</h1>
             <nav class="nav">
               <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#work">WORK</a></li>
-                <li><a href="#footer">CONTACT</a></li>
+                <li data-link="#about">ABOUT</li>
+                <li data-link="#work"> WORK</li>
+                <li data-link="#footer">CONTACT</li>
               </ul>
             </nav>
           </div>
@@ -124,18 +123,18 @@
             <div class="left">
               <div>
                 <div class="text">
-                  <h2 data-scroll data-scroll-speed="2">Hello!</h2>
-                  <strong data-scroll data-scroll-speed="3">I'm Yeonsoo Seo</strong>
-                  <p data-scroll data-scroll-speed="2.5">
-                    안녕하세요! 만나서 반갑습니다. 프론트엔드 개발자를 희망하는
-                    서연수입니다. 저의 포트폴리오에 오신 것을 환영합니다. 정성껏
-                    제작한 저의 포트폴리오가 마음에 드신다면 꼭 연락해 주세요!
-                    빠른 시간 내로 답변 드리겠습니다. 그럼 즐겁게 감상해주세요
-                    :) 감사합니다.
+                  <h2>
+                    <em class="splice">Hello!</em>
+                    <em class="splice">I'm Yeonsoo Seo</em>
+                  </h2>
+                  <p>
+                    <em class="splice">
+                      안녕하세요! 만나서 반갑습니다. 프론트엔드 개발자를 희망하는 서연수입니다. 저의 포트폴리오에 오신 것을 환영합니다. 정성껏 제작한 저의 포트폴리오가 마음에 드신다면 꼭 연락해 주세요! 빠른 시간 내로 답변 드리겠습니다. 그럼 즐겁게 감상해주세요 :) 감사합니다.
+                    </em>
                   </p>
                 </div>
                 <a href="#" data-scroll data-scroll-speed="2">RESUME DOWNLOAD</a>
-                <span data-scroll data-scroll-speed="3">
+                <span class="planet" data-scroll data-scroll-speed="3">
                   <svg
                     width="76%"
                     height="10vw"
@@ -998,12 +997,17 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+    <!-- jqueryui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- imageloaded -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
 
     <!-- my js -->
     <script src="../js/horizontal_scroll.js"></script>
     <script src="../js/menu_label.js"></script>
     <script src="../js/bg.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

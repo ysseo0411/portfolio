@@ -1,8 +1,20 @@
 @charset "utf-8";
 @import "font.css";
 
-/* loading */
-#loader-wrapper {
+/* progress */
+.progress {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250, 228, 223);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  z-index: 100000;
+}
+
+.loader-wrapper {
   position: absolute;
   display: flex;
   align-items: center;
@@ -11,14 +23,6 @@
   height: 100%;
 }
 
-.loader {
-  display: flex;
-  width: 300px;
-  height: 4px;
-  background: #fff;
-  overflow: hidden;
-  z-index: 1000000;
-}
 .progress-text {
   font-family: "Abel";
   display: flex;
@@ -30,8 +34,17 @@
   top: 42%;
 }
 
-.loader-line {
+.loader {
+  display: flex;
+  width: 300px;
   height: 4px;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1000000;
+}
+
+.loader-line {
+  height: 5px;
   background: linear-gradient(
     to right,
     rgb(255, 203, 203) 0,
@@ -63,30 +76,6 @@
   100% {
     transform: translateX(100%);
   }
-}
-
-.loader-section {
-  position: fixed;
-  display: flex;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  z-index: 100000;
-}
-
-.loaded #loader-wrapper .loader-section {
-  transform: translateY(-100%);
-  transition: all 0.5s 0.3s ease-out;
-}
-.loaded #loader-wrapper {
-  visibility: hidden;
-}
-.loaded .loader {
-  opacity: 0;
-  transition: all 0.5s 0.3s ease-out;
 }
 
 /* c-scrollbar */
@@ -178,12 +167,14 @@ body {
   backdrop-filter: blur(1.2px);
   border-bottom: 0.2rem solid #000;
   z-index: 10;
+  opacity: 0;
 }
 
 #header .contents h1 {
   float: left;
   line-height: 60px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 #header .nav ul {
@@ -195,10 +186,8 @@ body {
   float: left;
   margin-right: 2.5vw;
   line-height: 60px;
-}
-
-#header .nav ul li a {
   color: #d00000;
+  cursor: pointer;
 }
 
 #header ul li:last-child {
@@ -271,12 +260,56 @@ body {
   line-height: 1.1;
 }
 
-#mainview .left .text h2 {
+#mainview .left h2 {
   position: relative;
+  animation: balloon 5s infinite;
+}
+
+#mainview .left p {
+  /* animation: balloon 5s infinite; */
+}
+
+@keyframes balloon {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#mainview .left h2 em {
+  white-space: nowrap;
+  display: block;
+  font-style: normal;
+}
+
+#mainview .left h2 span {
+  opacity: 0;
+}
+#mainview .left p span {
+  opacity: 0;
+}
+
+#mainview .left h2 .splice:first-child {
   font-size: 13vh;
 }
 
-#mainview .left .text h2::before {
+#mainview .left h2 .splice:last-child {
+  font-size: 8vh;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+/* #mainview .left h2 span {
+  opacity: 0;
+  display: inline-block;
+} */
+
+/* #mainview .left .text h2::before {
   content: "";
   display: block;
   width: 240px;
@@ -284,24 +317,18 @@ body {
   top: 6vh;
   left: 35vh;
   border: 0.1rem solid #000;
-}
+} */
 
-#mainview .left .text strong {
-  display: block;
-  font-size: 8vh;
-  font-style: normal;
-  white-space: nowrap;
-}
-
-#mainview .left p {
+#mainview .left p em {
   display: block;
   font-family: "YUniverse";
   font-size: 2vh;
   line-height: 1.8;
   text-align: justify;
-  padding-bottom: 2vw;
+  padding-bottom: 1vw;
   padding-top: 1.8vw;
   letter-spacing: -0.2px;
+  font-style: normal;
 }
 
 #mainview .left a {
@@ -315,6 +342,7 @@ body {
   font-family: "abel";
   background-color: #000;
   box-sizing: border-box;
+  opacity: 0;
 }
 
 #mainview .right {
@@ -333,6 +361,8 @@ body {
   border: 0.2rem solid #000;
   border-radius: 30vw 30vw 0 0;
   background: url("../src/img/mainview011.jpg") no-repeat center center / cover;
+  /* animation: balloon 5s infinite; */
+  opacity: 0;
 }
 
 #mainview .line {
@@ -343,26 +373,34 @@ body {
   background: #000;
   top: 59px;
   z-index: -1;
+  opacity: 0;
 }
 
-#mainview .contents .left span {
+#mainview .contents .left .planet {
   position: absolute;
   left: 40%;
   top: 70%;
   z-index: 10;
+  opacity: 0;
+  animation: balloon 4.5s infinite;
 }
 
-#mainview .contents span:nth-child(1) {
+#mainview .contents .blink:nth-child(1) {
   position: absolute;
   left: 92%;
   top: 16%;
 }
 
-#mainview .contents span:nth-child(2) {
+#mainview .contents .blink:nth-child(2) {
   position: absolute;
   left: 97%;
   top: 33%;
 }
+
+#mainview .contents .scrolldown {
+  opacity: 0;
+}
+
 #mainview .contents .scrolldown svg {
   height: 58%;
   font-size: 32px;
@@ -1224,9 +1262,10 @@ body {
 #work .script .contents .box .top-box .btn a {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: "Abel";
   font-size: 1.3vw;
-  padding: 1vw 4vw;
+  padding: 1vw 2vw;
   width: 100%;
   color: #fff;
   background-color: #000;
