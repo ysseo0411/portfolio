@@ -332,11 +332,9 @@ body {
 }
 
 #mainview .left a {
-  width: 13vw;
-  height: 3vw;
   display: inline-block;
   color: #fff;
-  padding: 0 2vw;
+  padding: 0 2.8vw;
   line-height: 3vw;
   font-size: 1.1vw;
   font-family: "abel";
