@@ -47,7 +47,7 @@ function imagesProgress() {
       gsap.to("#mainview .left .planet", {
         opacity: 1,
         duration: 0.5,
-        delay: 1.6,
+        delay: 1.9,
       });
 
       gsap.to("#mainview .contents .scrolldown", {
