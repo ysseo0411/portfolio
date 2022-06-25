@@ -1845,22 +1845,26 @@ body {
 
   #mainview .contents .scrolldown svg {
     height: 48%;
-    top: 48vh;
-    left: -16vh;
+    top: 49vh;
+    left: 33vh;
   }
 
   #mainview .contents .right .scrolldown span {
     height: 10%;
-    right: 15%;
+    left: 67%;
   }
 
-  #mainview .contents span:nth-child(1) {
+  #mainview .contents .blink:nth-child(1) {
     left: 87%;
   }
 
-  #mainview .contents span:nth-of-type(2) {
+  #mainview .contents .blink:nth-of-type(2) {
     left: 92%;
     top: 28%;
+  }
+
+  #work .script .title span:nth-of-type(3) {
+    top: 201px;
   }
 }
 
@@ -1890,13 +1894,14 @@ body {
   #mainview .contents {
     flex-direction: column-reverse;
     top: 60px;
+    height: 185vh;
   }
 
   #mainview .left {
     width: 100%;
     text-align: center;
     position: fixed;
-    top: 800px;
+    top: 902px;
   }
 
   #mainview .left .text h2::before {
@@ -1916,7 +1921,12 @@ body {
     font-size: 2.9vw;
     margin: 0 auto;
     margin-top: 3vw;
-    margin-bottom: 23vw;
+    margin-bottom: 11vw;
+  }
+
+  #mainview .left p em {
+    padding-top: 5.8vw;
+    font-size: 2.2vh;
   }
 
   #mainview .right {
@@ -1943,33 +1953,32 @@ body {
 
   #mainview .left a {
     position: relative;
-    width: 62%;
-    height: 5.5vw;
+    width: 71%;
     display: block;
     color: #fff;
     background-color: #000;
-    padding: 0 2vw;
+    padding: 1vw 18vw;
     line-height: 5.5vw;
-    font-size: 2vw;
+    font-size: 2.7vw;
     font-family: "abel";
     box-sizing: border-box;
     margin: 0 auto;
   }
 
-  #mainview .contents .left div span {
-    top: -650px;
+  #mainview .contents .left .planet {
+    top: -782px;
     left: 6%;
     z-index: 1;
   }
 
-  #mainview .contents span:nth-child(1) {
-    top: 10%;
+  #mainview .contents .blink:nth-child(1) {
+    top: 5%;
     left: 82%;
     z-index: 1;
   }
 
-  #mainview .contents span:nth-child(2) {
-    top: 20%;
+  #mainview .contents .blink:nth-child(2) {
+    top: 9%;
     left: 89%;
     z-index: 1;
   }
@@ -1984,8 +1993,8 @@ body {
 
   #about_marquee {
     width: 100%;
-    top: 100vw;
-    height: 14vw;
+    top: 0;
+    height: 15vw;
   }
 
   #about_marquee .content > p {
@@ -1993,9 +2002,77 @@ body {
     line-height: 13.6vw;
   }
 
-  /* #profile,
-  #work,
-  #work_marquee,
-  #contact {
-  } */
+  #profile .pin-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 700px;
+  }
+
+  #about .container {
+    height: 127vh;
+    margin-top: 55%;
+  }
+  #about .contents {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  #about .contents .left {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #about .contents .right {
+    width: 100%;
+  }
+
+  #about .contents .left .img-circle,
+  #about .contents .left .img-circle::after {
+    width: 63vw;
+    height: 63vw;
+  }
+
+  #about .contents .img-deco {
+    font-size: 6.6vw;
+    width: 83vw;
+  }
+
+  #about .contents .left img {
+    height: 75vh;
+    top: -87px;
+  }
+
+  #about .contents .right h2 {
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  #about .right p[class="intro"] {
+    text-align: center;
+    font-size: 4vw;
+    padding: 2vw 4vw;
+  }
+
+  #about .right p[class="desc"] {
+    font-size: 2.5vw;
+    text-align: justify;
+    padding: 0 4vw;
+  }
+
+  #skills .container {
+    height: 63vh;
+  }
+
+  #skills .line:nth-of-type(1),
+  #skills .line:nth-of-type(2) {
+    display: none;
+  }
+
+  #skills .contents span:nth-of-type(1),
+  #skills .contents span:nth-of-type(2) {
+    display: none;
+  }
 }
