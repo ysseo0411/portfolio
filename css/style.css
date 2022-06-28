@@ -1463,24 +1463,23 @@ body {
 }
 
 #work .css-ani .contents .left .csi1 {
-  background: url("../src/img/planetani.png") no-repeat center center / cover;
-  background-position-y: -12px;
+  background: url("../src/img/planetani.png") no-repeat center center / 133%;
+  background-position: -60px -38px;
 }
 
 #work .css-ani .contents .left .csi2 {
-  background: url("../src/img/movingcube.png") no-repeat center center / cover;
-  background-position-y: 1px;
-  background-position-x: -36px;
+  background: url("../src/img/movingcube.png") no-repeat center center / 169%;
+  background-position: -133px -101px;
 }
 
 #work .css-ani .contents .left .csi3 {
-  background: url("../src/img/tailani.png") no-repeat center center / cover;
-  background-position-y: -1px;
-  background-position-x: -1px;
+  background: url(../src/img/tailani.png) no-repeat center center / 128%;
+  background-position: -23px -18px;
 }
 
 #work .css-ani .contents .left .csi4 {
-  background: url("../src/img/waveani.png") no-repeat center center / cover;
+  background: url("../src/img/waveani.png") no-repeat center center / 116%;
+  background-position: -16px -29px;
 }
 
 #work .css-ani .contents .left img {
