@@ -1378,9 +1378,9 @@ body {
 #work .css-ani .title em {
   position: absolute;
   top: 112px;
-  right: 65px;
+  right: 264px;
   color: #000;
-  font-size: 120px;
+  font-size: 15vw;
   text-shadow: 2px 3px 0 #fff;
   /* font-style: normal; */
 }
@@ -1390,21 +1390,21 @@ body {
   left: 49px;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 1);
-  font-size: 130px;
+  font-size: 21vw;
 }
 
 #work .css-ani .title span:nth-of-type(2) {
   width: 150px;
   position: absolute;
-  left: -36px;
-  top: -51px;
+  left: -19px;
+  top: -43px;
 }
 
 #work .css-ani .title span:nth-of-type(3) {
   width: 150px;
   position: absolute;
-  left: 470px;
-  top: 209px;
+  left: 390px;
+  top: 203px;
 }
 
 #work .css-ani .title span:nth-of-type(4) {
@@ -1996,39 +1996,70 @@ body {
 
   #work .web .work-item .text em {
     font-size: 21vw;
-    right: -5px;
+    right: 0;
   }
 
   #work .web .work-item:nth-child(even) em {
-    right: -488px;
+    right: -395px;
+  }
+
+  #work .script .title {
+    width: auto;
   }
 
   #work .web .work-item .text p {
-    font-size: 3.3vw;
+    font-size: 2.9vw;
   }
 
   #work .script .title > span {
-    font-size: 113px;
+    left: 0;
+    font-size: 17vw;
   }
 
   #work .script .title em {
     top: 95px;
-    right: 143px;
-    font-size: 120px;
+    right: 0;
+    font-size: 18vw;
   }
 
   #work .script .title span:nth-of-type(2) {
-    left: 42%;
+    left: 44%;
   }
 
   #work .script .title span:nth-of-type(3) {
-    left: 67%;
-    top: 227px;
+    left: 82%;
+    top: 220px;
   }
 
   #work .css-ani .contents .box {
     flex-direction: column;
     height: auto;
+  }
+
+  #work .css-ani .title {
+    width: auto;
+  }
+
+  #work .css-ani .title span:nth-of-type(1) {
+    left: 6%;
+    font-size: 17vw;
+  }
+
+  #work .css-ani .title span:nth-of-type(3) {
+    top: 221px;
+  }
+
+  #work .css-ani .title span:nth-of-type(4) {
+    top: 70px;
+  }
+
+  #work .css-ani .title span:nth-of-type(5) {
+    right: -12%;
+    top: 113px;
+  }
+
+  #work .css-ani .title em {
+    right: 0;
   }
 
   #work .css-ani .contents .box:nth-child(3),
