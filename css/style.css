@@ -1378,9 +1378,9 @@ body {
 #work .css-ani .title em {
   position: absolute;
   top: 112px;
-  right: 264px;
+  right: 43px;
   color: #000;
-  font-size: 15vw;
+  font-size: 115px;
   text-shadow: 2px 3px 0 #fff;
   /* font-style: normal; */
 }
@@ -1390,7 +1390,7 @@ body {
   left: 49px;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 1);
-  font-size: 21vw;
+  font-size: 143px;
 }
 
 #work .css-ani .title span:nth-of-type(2) {
@@ -1403,8 +1403,8 @@ body {
 #work .css-ani .title span:nth-of-type(3) {
   width: 150px;
   position: absolute;
-  left: 390px;
-  top: 203px;
+  left: 405px;
+  top: 225px;
 }
 
 #work .css-ani .title span:nth-of-type(4) {

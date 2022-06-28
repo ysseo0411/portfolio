@@ -6,9 +6,10 @@ const randomTime = random(6, 12);
 const randomTime2 = random(5, 6);
 const randomAngle = random(-30, 150);
 
-const blurs = gsap.utils.toArray(".blur");
+const blurs = gsap.utils.toArray(".blur"); // 요소 목록을 반복 (blur의 자식요소)
 blurs.forEach((blur) => {
   gsap.set(blur, {
+    // 요소에 속성값 설정
     x: randomX(-1),
     y: randomX(1),
     rotation: randomAngle(-1),
